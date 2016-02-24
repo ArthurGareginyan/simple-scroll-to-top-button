@@ -1,7 +1,7 @@
 # How to contribute
 
-When contributing to "Simple Scroll to Top" you have to follow some conventions and a simple workflow. It allows me to handle the requests quickly and ensure best quality
-for the "Simple Scroll to Top" core code.
+When contributing to "Simple Scroll to Top Button" you have to follow some conventions and a simple workflow. It allows me to handle the requests quickly and ensure best quality
+for the "Simple Scroll to Top Button" core code.
 
 Following guidelines will result in less work for both you and me. Please take the time and read the following guide from beginning to the end.
 
@@ -12,18 +12,18 @@ Following guidelines will result in less work for both you and me. Please take t
 
 ## Submitting bug reports
 
-The preferred way to report bugs is to use the [GitHub issue tracker](https://github.com/ArthurGareginyan/simple-scroll-to-top/issues). Before reporting a bug, read these pointers.
+The preferred way to report bugs is to use the [GitHub issue tracker](https://github.com/ArthurGareginyan/simple-scroll-to-top-button/issues). Before reporting a bug, read these pointers.
 
 **Note:** The issue tracker is for *bugs*, not requests for help.
 
 
 ### Reporting bugs effectively
 
-- "Simple Scroll to Top" is maintained by me. I don't owe you anything, so be polite. Reports with an indignant or belligerent tone tend to be moved to the bottom of the pile.
+- "Simple Scroll to Top Button" is maintained by me. I don't owe you anything, so be polite. Reports with an indignant or belligerent tone tend to be moved to the bottom of the pile.
 
 - Include information about **the browser in which the problem occurred**. Even if you tested several browsers, and the problem occurred in all of them, mention this fact in the bug report. Also include browser version numbers and the operating system that you're on.
 
-- Mention which release of "Simple Scroll to Top" you're using.
+- Mention which release of "Simple Scroll to Top Button" you're using.
 
 - Mention very precisely what went wrong. "X is broken" is not a good bug report. What did you expect to happen? What happened instead? Describe the exact steps a maintainer has to take to make the problem occur. We can not fix something that we can not observe.
 
@@ -31,14 +31,14 @@ The preferred way to report bugs is to use the [GitHub issue tracker](https://gi
 ## Contributing code
 
 - Make sure you have a [GitHub Account](https://github.com/signup/free)
-- Fork [Simple Scroll to Top](https://github.com/ArthurGareginyan/simple-scroll-to-top)
+- Fork [Simple Scroll to Top Button](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
   ([how to fork a repo](https://help.github.com/articles/fork-a-repo))
 - Make your changes
 - Submit a pull request
 ([how to create a pull request](https://help.github.com/articles/fork-a-repo)).
   Don't put more than one feature/fix in a single pull request.
 
-By contributing code to "Simple Scroll to Top" you:
+By contributing code to "Simple Scroll to Top Button" you:
 
  - agree to license the contributed code under [GNU GPLv3 license](http://www.gnu.org/licenses/gpl-3.0.html).
 
