@@ -17,10 +17,11 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 
 **Current features:**
 
-
+* 
 
 **Coming soon:**
 
+* Adding Russian translation
 * (Got more ideas? Tell me!)
 
 
