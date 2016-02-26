@@ -64,7 +64,7 @@ After installation, a "`Preloader`" menu item will appear in the "`Settings`" s
 
 
 == Frequently Asked Questions ==
-= Q. Will this Plugin work on my WordPress.com website? =
+= Q. Will this Plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.org) websites.
 
 = Q. Can I use this plugin on my language? =
@@ -73,6 +73,18 @@ A. Yes. But If your language is not available then you can make one. This plugin
 = Q. How does it work? =
 A. First, go to page "`Settings`" —> "`Scroll to Top`".
 On the plugins page select the desired settings, then click "Save Changes". It's that simple!
+
+= Q. Is it possible to use different buttons/arrows? =
+A. The plugin comes with FontAwesome library. Now you can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. A future version may include more buttons, and/or the option to upload your own button graphics.
+
+= Q. Does this plugin require modification to the theme? =
+A. Absolutely not. This plugin is added/configured entirely from the website's Admin section.
+
+= Q. Does this require any knowledge of HTML or CSS? =
+A. Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using a simple WordPress settings page.
+
+= Q. It's not working. What could be wrong? =
+A. As with every plugin, it's possible that things don't work. The most common reason for this is that the plugin has a conflict with another plugin you're using. It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
 
 = Q. Where to report bug if found? =
 A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button) and report.
