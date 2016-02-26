@@ -94,9 +94,12 @@ A. Please visit [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/w
 
 
 == Screenshots ==
-1. Plugin’s page. Section "Settings".
-2. Plugin’s page. Section "Preview".
-
+1. Plugin’s page. Sections "Settings" and "Preview".
+2. 'Scroll to Top' button displayed on front end of website (Twenty Fifteen theme).
+3. 'Scroll to Top' button (with transparency) displayed on front end of website (Twenty Fifteen theme).
+4. 'Scroll to Top' button displayed on front end of website (Twenty Sixteen theme).
+5. List of backgrounds for a button that you can use.
+6. List of symbols for a button that you can use.
 
 
 == Other Notes ==
