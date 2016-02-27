@@ -31,10 +31,10 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Auto hide button on top of webpage
 * Live preview
 * Ready for translation (.pot file included)
+* Added Russian translation
 
 **Coming soon:**
 
-* Adding Russian translation
 * (Got more ideas? Tell me!)
 
 
@@ -68,9 +68,9 @@ Arthur Garegnyan aka Berserkr
 
 ## Links
 
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html) - `STILL NOT CREATED`
+* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html)
 
-* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/simple-scroll-to-top-button/) - `STILL NOT CREATED`
+* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/simple-scroll-to-top-button/)
 
 * [Donation Page](http://www.arthurgareginyan.com/donate.html)
 

@@ -1,10 +1,10 @@
 === Simple Scroll to Top Button ===
 Contributors: Arthur Gareginyan
-Tags: scroll to top, scroll up, scroll back, back to top, 
+Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,11 +39,11 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Auto hide button on top of webpage
 * Live preview
 * Ready for translation (.pot file included)
+* Added Russian translation.
 
 
 **Coming soon:**
 
-* Adding Russian translation
 * (Got more ideas? Tell me!)
 
 
@@ -140,6 +140,8 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
+= 1.1 =
+* Added Russian translation.
 = 1.0 =
 * Initial release.
 * Added ready for translation (.pot file included).
@@ -150,5 +152,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+= 1.1 =
+* Added Russian translation.
 = 1.0 =
 Please update to first stable release!

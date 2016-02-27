@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Scroll to Top Button\n"
+"POT-Creation-Date: 2016-02-27 04:49+0300\n"
+"PO-Revision-Date: 2016-02-27 04:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: simple-scroll-to-top-button.php\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: inc/settings_page.php:22
+msgid "Simple Scroll to Top Button"
+msgstr ""
+
+#: inc/settings_page.php:25
+msgid ""
+"by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+"\"Berserkr\" Gareginyan</a>"
+msgstr ""
+"от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
+"“Berserkr” Гарегинян</a>"
+
+#: inc/settings_page.php:36
+msgid "About"
+msgstr ""
+
+#: inc/settings_page.php:41
+msgid ""
+"This plugin allows you to easily add the \"Scroll to Top\" button to your "
+"website in a simple and elegant way."
+msgstr ""
+"Этот плагин позволяет легко добавлять кнопку «Scroll to Top» на ваш сайт в "
+"простой и элегантный способ."
+
+#: inc/settings_page.php:42
+msgid ""
+"To use, select the desired settings, then click \"Save Changes\". It's that "
+"simple!"
+msgstr ""
+"Для использования, выберите нужные параметры, а затем нажмите кнопку "
+"«Сохранить изменения». Это так просто!"
+
+#: inc/settings_page.php:47
+msgid "Donate"
+msgstr "Пожертвование"
+
+#: inc/settings_page.php:49
+msgid ""
+"If you like this plugin and find it useful, help me to make this plugin even "
+"better and keep it up-to-date."
+msgstr ""
+"Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
+"сделать его ещё лучше."
+
+#: inc/settings_page.php:55
+msgid "Thanks for your support!"
+msgstr "Спасибо за вашу поддержку!"
+
+#: inc/settings_page.php:60
+msgid "Help"
+msgstr "Помощь"
+
+#: inc/settings_page.php:63
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+"Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
+"добавить их."
+
+#: inc/settings_page.php:81 simple-scroll-to-top-button.php:58
+msgid "Settings"
+msgstr "Настройки"
+
+#: inc/settings_page.php:87
+msgid "Enable \"Scroll to Top\" button"
+msgstr "Включить кнопку \"Scroll to Top\""
+
+#: inc/settings_page.php:90 inc/settings_page.php:152
+msgid "ON"
+msgstr "ВКЛ"
+
+#: inc/settings_page.php:91 inc/settings_page.php:153
+msgid "OFF"
+msgstr "ВЫКЛ"
+
+#: inc/settings_page.php:97
+msgid "Button background"
+msgstr "Фон кнопки"
+
+#: inc/settings_page.php:103
+msgid "Without background"
+msgstr "Без фона"
+
+#: inc/settings_page.php:109
+msgid "Button background color"
+msgstr "Цвет фона кнопки"
+
+#: inc/settings_page.php:116
+msgid ""
+"Select the background color of button. You can also add html HEX color code."
+msgstr ""
+"Выберите цвет фона кнопки. Вы также можете добавить html HEX код цвета."
+
+#: inc/settings_page.php:120
+msgid "Button symbol"
+msgstr "Символ кнопки"
+
+#: inc/settings_page.php:138
+msgid "Button symbol color"
+msgstr "Цвет символа кнопки"
+
+#: inc/settings_page.php:145
+msgid ""
+"Select the color of symbol inside button. You can also add html HEX color "
+"code."
+msgstr ""
+"Выберите цвет символа кнопки. Вы также можете добавить html HEX код цвета."
+
+#: inc/settings_page.php:149
+msgid "Button transparency"
+msgstr "Прозрачности кнопки"
+
+#: inc/settings_page.php:159
+msgid "Button size"
+msgstr "Размер кнопки"
+
+#: inc/settings_page.php:166
+msgid "You can set the size of button (in px)."
+msgstr "Вы можете установить размер кнопки (в пикселях)."
+
+#: inc/settings_page.php:170
+msgid "Display button on"
+msgstr "Отображать кнопку на"
+
+#: inc/settings_page.php:173
+msgid "Full Website"
+msgstr "Весь Веб-сайт"
+
+#: inc/settings_page.php:174
+msgid "Home Page Only"
+msgstr "Только Главная Страница"
+
+#: inc/settings_page.php:180
+msgid "Select where button need to be appeared."
+msgstr "Выберите, где кнопка должна показываться."
+
+#: inc/settings_page.php:184
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: inc/settings_page.php:189
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+#: inc/settings_page.php:191
+msgid "Click \"Save Changes\" to update this preview."
+msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
+
+#: simple-scroll-to-top-button.php:71
+msgid "Scroll to Top"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button."
+"html"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily add cross browser \"Scroll to Top\" button to your website. It will "
+"be responsive and compatible with all major browsers. It will work with any "
+"theme!"
+msgstr ""
+"Легко добавьте кросс-браузерную кнопку «Scroll to Top» на ваш вебсайта. Она "
+"будет responsive и совместима со всеми основными браузерами. Она будет "
+"работать с любой темой!"
+
+#. Author of the plugin/theme
+msgid "Arthur \"Berserkr\" Gareginyan"
+msgstr "Артур “Берсеркр” Гарегинян"
+
+#. Author URI of the plugin/theme
+msgid "http://www.arthurgareginyan.com"
+msgstr ""
