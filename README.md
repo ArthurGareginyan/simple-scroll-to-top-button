@@ -10,12 +10,8 @@ This plugin give you finer control over "Scroll to Top" button, it can be config
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the Scroll To Up button. "Scroll to Top" button will be responsive and compatible with all major browsers. It will work with any theme! No knowledge of any coding (HTML, CSS, JavaScript, PHP) is required at all.
 
-Please if you have any suggestions to make this plugin better, don't hesitate to contact me.
-
 
 ## Features
-
-**Current features:**
 
 * Responsive
 * Retina display support
@@ -31,11 +27,9 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Auto hide button on top of webpage
 * Live preview
 * Ready for translation (.pot file included)
-* Added Russian translation
+* Russian translation
 
-**Coming soon:**
-
-* (Got more ideas? Tell me!)
+**Got more ideas? Tell me!**
 
 
 ## Contributing
@@ -67,8 +61,6 @@ Arthur Garegnyan aka Berserkr
 
 
 ## Links
-
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html)
 
 * [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/simple-scroll-to-top-button/)
 

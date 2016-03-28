@@ -39,15 +39,12 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Auto hide button on top of webpage
 * Live preview
 * Ready for translation (.pot file included)
-* Added Russian translation.
+* Added Russian translation
 
 
 **Coming soon:**
 
 * (Got more ideas? Tell me!)
-
-
-For more details please visit - [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html)
 
 **Please Vote and Enjoy**
 
@@ -71,7 +68,7 @@ Manual via FTP:
 4. Log into WordPress Dashboard of your website.
 5. Activate this plugin through the "`Plugins`" tab.
 
-After installation, a "`Preloader`" menu item will appear in the "`Settings`" section. Click on this in order to view plugin's administration page.
+After installation, a "`Scroll to Top`" menu item will appear in the "`Settings`" section. Click on this in order to view plugin's administration page.
 
 [More help installing Plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
@@ -103,7 +100,7 @@ A. As with every plugin, it's possible that things don't work. The most common r
 A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button) and report.
 
 = Q. Where to share any ideas or suggestions to make the plugin better? =
-A. Please visit [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html) and share.
+A. Please send me email [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com).
 
 
 == Screenshots ==
@@ -127,7 +124,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 **Support**
 
 * Did you enjoy this plugin? Please [donate to support ongoing development](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS). Your contribution would be greatly appreciated.
-* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html)
+* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com)
 
 **Please Vote and Enjoy**
 
@@ -136,7 +133,6 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 **Links**
 
 * [Developer Website](http://www.arthurgareginyan.com)
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
