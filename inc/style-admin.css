@@ -1,7 +1,7 @@
 /*
  * Simple Scroll to Top Button
  * Style sheet for plugin's page
- * @since 1.0
+ * @since 1.2
  * @agareginyan
  */
 
@@ -68,11 +68,19 @@ td.help-text {
     position: relative;
 }
 
-.about img {
-    max-width: 100%;
+#about {
+    text-align: center;
 }
 
-.donate {
+#donate {
+    text-align: center;
+}
+
+#help {
+    text-align: center;
+}
+
+#freelance {
     text-align: center;
 }
 

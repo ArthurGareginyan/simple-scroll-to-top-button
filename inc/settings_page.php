@@ -2,13 +2,15 @@
 
 /**
  * Prevent Direct Access
+ *
+ * @since 0.1
  */
 defined('ABSPATH') or die("Restricted access!");
 
 /**
  * Render Settings Page
  *
- * @since 1.0
+ * @since 1.2
  */
 function ssttbutton_render_submenu_page() {
 
@@ -35,33 +37,38 @@ function ssttbutton_render_submenu_page() {
                     <div id="about" class="postbox">
                         <h3 class="title"><?php _e( 'About', 'ssttbutton' ); ?></h3>
                         <div class="inside">
-                            <p class="about">
-                                <img src="<?php echo plugins_url('thanks.png', __FILE__); ?>">
-                            </p>
                             <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', 'ssttbutton' ) ?></p>
                             <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'ssttbutton' ) ?></p>
+                        </div>
+                    </div>
+
+                    <div id="help" class="postbox">
+                        <h3 class="title"><?php _e( 'Help', 'smbtoolbar' ); ?></h3>
+                        <div class="inside">
+                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'smbtoolbar' ); ?></p>
+                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
                         <h3 class="title"><?php _e( 'Donate', 'ssttbutton' ); ?></h3>
                         <div class="inside">
-                            <p class="donate"><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'ssttbutton' ) ?></p>
-                            <div class="aligncenter">
-                                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
-                                    <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Make a donation">
-                                </a>
-                            </div>
+                            <img src="<?php echo plugins_url('thanks.png', __FILE__); ?>">
+                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'ssttbutton' ) ?></p>
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
+                                <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Make a donation">
+                            </a>
                             <p class="donate"><?php _e( 'Thanks for your support!', 'ssttbutton' ) ?></p>
                         </div>
                     </div>
 
-                    <div id="help" class="postbox">
-                        <h3 class="title"><?php _e( 'Help', 'ssttbutton' ); ?></h3>
+                    <div id="freelance" class="postbox">
+                        <h3 class="title"><?php _e( 'Freelance', 'allmetatags' ) ?></h3>
                         <div class="inside">
-                            <div class="aligncenter">
-                                <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'ssttbutton' ); ?></p>
-                            </div>
+                            <img src="<?php echo plugins_url('author.png', __FILE__); ?>">
+                            <p><?php _e( 'Hello, my name is Arthur and I\'m a freelance web designer and developer.', 'allmetatags' ) ?></p>
+                            <p><?php _e( 'Share your thoughts with me. You may have a brilliant idea in your mind and I can make it happen, so let’s get started!', 'allmetatags' ) ?></p>
+                            <p><a href="http://www.arthurgareginyan.com/" target="_blank">www.arthurgareginyan.com</a></p>
                         </div>
                     </div>
 
@@ -98,7 +105,7 @@ function ssttbutton_render_submenu_page() {
                                             <td>
                                                 <ul>
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked('fa-square', $options['background_button']); ?> ><i class="fa fa-square fa-2x"></i></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $options['background_button']); ?> <?php checked('fa-square-o', $options['form_button']); ?> ><i class="fa fa-square-o fa-2x"></i></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $options['background_button']); ?> <?php checked('fa-square-o', $options['background_button']); ?> ><i class="fa fa-square-o fa-2x"></i></li>
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked('', $options['background_button']); ?> <?php checked('fa-circle', $options['background_button']); ?> ><i class="fa fa-circle fa-2x"></i></li>
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $options['background_button']); ?> ><?php _e( 'Without background', 'ssttbutton' ); ?></li>
                                                 </ul>

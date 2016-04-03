@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name: Simple Scroll to Top Button
- * Plugin URI: http://mycyberuniverse.com/my_programs/wp-plugin-simple-scroll-to-top-button.html
+ * Plugin URI: https://github.com/ArthurGareginyan/simple-scroll-to-top-button
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur "Berserkr" Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 1.1
+ * Version: 1.2
  * License: GPL3
  * Text Domain: ssttbutton
  * Domain Path: /languages/
  *
- * Copyright 2015  Arthur "Berserkr" Gareginyan  (email : arthurgareginyan@gmail.com)
+ * Copyright 2016  Arthur "Berserkr" Gareginyan  (email : arthurgareginyan@gmail.com)
  *
  * This file is part of "Simple Scroll to Top Button".
  *
@@ -31,6 +31,8 @@
 
 /**
  * Prevent Direct Access
+ *
+ * @since 0.1
  */
 defined('ABSPATH') or die("Restricted access!");
 

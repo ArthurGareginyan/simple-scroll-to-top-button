@@ -18,12 +18,7 @@ This plugin give you finer control over "Scroll to Top" button, it can be config
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the Scroll To Up button. "Scroll to Top" button will be responsive and compatible with all major browsers. It will work with any theme! No knowledge of any coding (HTML, CSS, JavaScript, PHP) is required at all.
 
-Please if you have any suggestions to make this plugin better, don't hesitate to contact me.
-
-
 = Features =
-
-**Current features:**
 
 * Responsive
 * Retina display support
@@ -39,16 +34,16 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Auto hide button on top of webpage
 * Live preview
 * Ready for translation (.pot file included)
-* Added Russian translation
+* Russian translation
 
+**Got more ideas? Tell me!**
 
-**Coming soon:**
-
-* (Got more ideas? Tell me!)
+If you have any suggestions to make this plugin better, don't hesitate to contact me.
 
 **Please Vote and Enjoy**
 
-* Your votes really make a difference! Thanks.
+Your votes really make a difference! Thanks.
+
 
 == Installation ==
 Install "Simple Scroll to Top Button" just as you would any other WordPress Plugin.
@@ -102,6 +97,9 @@ A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareg
 = Q. Where to share any ideas or suggestions to make the plugin better? =
 A. Please send me email [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com).
 
+= Q. I love this plugin! Can I help somehow? =
+A. Yes, any financial contributions are welcome! Just visit my website and click on the donate link, and thank you! [My website](http://www.arthurgareginyan.com/donate.html)
+
 
 == Screenshots ==
 1. Plugin’s page. Sections "Settings" and "Preview".
@@ -136,6 +134,13 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
+= 1.2 =
+* Fixed: Notice: Undefined index: form_button in .../inc/settings_page.php.
+* Some changes in design of settings page.
+* Plugin URI changed to GitHub repository.
+* Added my personal ad about freelance.
+* .pot file updated.
+* Russian translation updated.
 = 1.1 =
 * Added Russian translation.
 = 1.0 =
@@ -148,6 +153,13 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+= 1.2 =
+* Fixed: Notice: Undefined index: form_button in .../inc/settings_page.php.
+* Some changes in design of settings page.
+* Plugin URI changed to GitHub repository.
+* Added my personal ad about freelance.
+* .pot file updated.
+* Russian translation updated.
 = 1.1 =
 * Added Russian translation.
 = 1.0 =
