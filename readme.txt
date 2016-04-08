@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.4
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -36,13 +36,13 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Ready for translation (.pot file included)
 * Russian translation
 
-**Got more ideas? Tell me!**
-
-If you have any suggestions to make this plugin better, don't hesitate to contact me.
-
-**Please Vote and Enjoy**
-
-Your votes really make a difference! Thanks.
+>**Contribution**
+>
+>Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+>
+>* Please [donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* Please take the time to [rate and review](https://wordpress.org/support/view/plugin-reviews/simple-scroll-to-top-button?rate=5#postform) this plugin.
+>* Please [share with me](mailto:arthurgareginyan@gmail.com) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
@@ -106,8 +106,6 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 2. 'Scroll to Top' button displayed on front end of website (Twenty Fifteen theme).
 3. 'Scroll to Top' button (with transparency) displayed on front end of website (Twenty Fifteen theme).
 4. 'Scroll to Top' button displayed on front end of website (Twenty Sixteen theme).
-5. List of backgrounds for a button that you can use.
-6. List of symbols for a button that you can use.
 
 
 == Other Notes ==
@@ -119,21 +117,23 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 This plugin is open-sourced software licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
 Commercial licensing (e.g. for projects that can’t use an open-source license) is available upon request.
 
-**Support**
-
-* Did you enjoy this plugin? Please [donate to support ongoing development](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS). Your contribution would be greatly appreciated.
-* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com)
-
-**Please Vote and Enjoy**
-
-* Your votes really make a difference! Thanks.
-
 **Links**
 
 * [Developer Website](http://www.arthurgareginyan.com)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
+= 2.0 =
+* Some changes in design of settings page.
+* Constants variables added.
+* Text domain changed to "simple-scroll-to-top-button".
+* Added compatibility with the translate.wordpress.org.
+* All images are moved to the directory "images".
+* Image "btn_donateCC_LG.gif" is now located in the "images" directory.
+* Plugin URI changed to GitHub repository.
+* Added my personal ad about freelance.
+* .pot file updated.
+* Russian translation updated.
 = 1.2 =
 * Fixed: Notice: Undefined index: form_button in .../inc/settings_page.php.
 * Some changes in design of settings page.
@@ -153,14 +153,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
-= 1.2 =
-* Fixed: Notice: Undefined index: form_button in .../inc/settings_page.php.
-* Some changes in design of settings page.
-* Plugin URI changed to GitHub repository.
-* Added my personal ad about freelance.
-* .pot file updated.
-* Russian translation updated.
-= 1.1 =
-* Added Russian translation.
+= 2.0 =
+Please update to new release!
 = 1.0 =
 Please update to first stable release!
+= 0.2 =
+Please update to beta version.

@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 1.2
+ * @since 2.0
  */
 function ssttbutton_render_submenu_page() {
 
@@ -21,10 +21,10 @@ function ssttbutton_render_submenu_page() {
 	?>
 	<div class="wrap">
 		<h2>
-            <?php _e( 'Simple Scroll to Top Button', 'ssttbutton' ); ?>
+            <?php _e( 'Simple Scroll to Top Button', 'simple-scroll-to-top-button' ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'ssttbutton' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'simple-scroll-to-top-button' ); ?>
             <span/>
 		</h2>
 
@@ -35,37 +35,43 @@ function ssttbutton_render_submenu_page() {
                 <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
                     <div id="about" class="postbox">
-                        <h3 class="title"><?php _e( 'About', 'ssttbutton' ); ?></h3>
+                        <h3 class="title"><?php _e( 'About', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', 'ssttbutton' ) ?></p>
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'ssttbutton' ) ?></p>
+                            <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', 'simple-scroll-to-top-button' ) ?></p>
+                        </div>
+                    </div>
+
+                    <div id="using" class="postbox">
+                        <h3 class="title"><?php _e( 'Using', 'simple-scroll-to-top-button' ); ?></h3>
+                        <div class="inside">
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'simple-scroll-to-top-button' ) ?></p>
                         </div>
                     </div>
 
                     <div id="help" class="postbox">
-                        <h3 class="title"><?php _e( 'Help', 'smbtoolbar' ); ?></h3>
+                        <h3 class="title"><?php _e( 'Help', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'smbtoolbar' ); ?></p>
+                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'simple-scroll-to-top-button' ); ?></p>
                             <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
-                        <h3 class="title"><?php _e( 'Donate', 'ssttbutton' ); ?></h3>
+                        <h3 class="title"><?php _e( 'Donate', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('thanks.png', __FILE__); ?>">
-                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'ssttbutton' ) ?></p>
+                            <img src="<?php echo plugins_url('images/thanks.png', __FILE__); ?>">
+                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'simple-scroll-to-top-button' ) ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
-                                <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Make a donation">
+                                <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
-                            <p class="donate"><?php _e( 'Thanks for your support!', 'ssttbutton' ) ?></p>
+                            <p><?php _e( 'Thanks for your support!', 'simple-scroll-to-top-button' ) ?></p>
                         </div>
                     </div>
 
                     <div id="freelance" class="postbox">
                         <h3 class="title"><?php _e( 'Freelance', 'allmetatags' ) ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('author.png', __FILE__); ?>">
+                            <img src="<?php echo plugins_url('images/author.png', __FILE__); ?>">
                             <p><?php _e( 'Hello, my name is Arthur and I\'m a freelance web designer and developer.', 'allmetatags' ) ?></p>
                             <p><?php _e( 'Share your thoughts with me. You may have a brilliant idea in your mind and I can make it happen, so let’s get started!', 'allmetatags' ) ?></p>
                             <p><a href="http://www.arthurgareginyan.com/" target="_blank">www.arthurgareginyan.com</a></p>
@@ -85,17 +91,17 @@ function ssttbutton_render_submenu_page() {
                             <?php settings_fields( 'ssttbutton_settings_group' ); ?>
 
                             <div class="postbox" id="Settings">
-                                <h3 class="title"><?php _e( 'Settings', 'ssttbutton' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Settings', 'simple-scroll-to-top-button' ) ?></h3>
                                 <div class="inside">
                                     <p class="description"></p>
                                     <table class="form-table">
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Enable "Scroll to Top" button', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Enable "Scroll to Top" button', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <ul>
-                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="ON" <?php checked('ON', $options['enable_button']); ?> ><?php _e( 'ON', 'ssttbutton' ); ?></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="" <?php checked('', $options['enable_button']); ?> ><?php _e( 'OFF', 'ssttbutton' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="ON" <?php checked('ON', $options['enable_button']); ?> ><?php _e( 'ON', 'simple-scroll-to-top-button' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="" <?php checked('', $options['enable_button']); ?> ><?php _e( 'OFF', 'simple-scroll-to-top-button' ); ?></li>
                                                 </ul>
                                             </td>
                                         </tr>
@@ -107,24 +113,24 @@ function ssttbutton_render_submenu_page() {
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked('fa-square', $options['background_button']); ?> ><i class="fa fa-square fa-2x"></i></li>
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $options['background_button']); ?> <?php checked('fa-square-o', $options['background_button']); ?> ><i class="fa fa-square-o fa-2x"></i></li>
                                                     <li><input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked('', $options['background_button']); ?> <?php checked('fa-circle', $options['background_button']); ?> ><i class="fa fa-circle fa-2x"></i></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $options['background_button']); ?> ><?php _e( 'Without background', 'ssttbutton' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $options['background_button']); ?> ><?php _e( 'Without background', 'simple-scroll-to-top-button' ); ?></li>
                                                 </ul>
                                             </td>
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Button background color', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Button background color', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php if ( !empty( $options['background-color'] ) ) { echo $options['background-color']; } else { echo '#000000'; }  ?>" placeholder="#000000" class="color-picker">
                                             </td>
                                         </tr>
                                         <tr valign='top'>
                                             <td></td>
-                                            <td class='help-text'><?php _e( 'Select the background color of button. You can also add html HEX color code.', 'ssttbutton' ); ?></td>
+                                            <td class='help-text'><?php _e( 'Select the background color of button. You can also add html HEX color code.', 'simple-scroll-to-top-button' ); ?></td>
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Button symbol', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Button symbol', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <ul>
                                                     <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $options['image_button']); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
@@ -142,60 +148,60 @@ function ssttbutton_render_submenu_page() {
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Button symbol color', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Button symbol color', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <input type="text" name="ssttbutton_settings[symbol-color]" id="ssttbutton_settings[symbol-color]" value="<?php if ( !empty( $options['symbol-color'] ) ) { echo $options['symbol-color']; } else { echo '#ffffff'; }  ?>" placeholder="#ffffff" class="color-picker">
                                             </td>
                                         </tr>
                                         <tr valign='top'>
                                             <td></td>
-                                            <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', 'ssttbutton' ); ?></td>
+                                            <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', 'simple-scroll-to-top-button' ); ?></td>
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Button transparency', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Button transparency', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <ul>
-                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="" <?php checked('', $options['transparency_button']); ?> ><?php _e( 'ON', 'ssttbutton' ); ?></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="OFF" <?php checked('OFF', $options['transparency_button']); ?> ><?php _e( 'OFF', 'ssttbutton' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="" <?php checked('', $options['transparency_button']); ?> ><?php _e( 'ON', 'simple-scroll-to-top-button' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="OFF" <?php checked('OFF', $options['transparency_button']); ?> ><?php _e( 'OFF', 'simple-scroll-to-top-button' ); ?></li>
                                                 </ul>
                                             </td>
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Button size', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Button size', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <input type="text" name="ssttbutton_settings[size_button]" id="ssttbutton_settings[size_button]" value="<?php echo $options['size_button']; ?>" placeholder="32" size="2" >
                                             </td>
                                         </tr>
                                         <tr valign='top'>
                                             <td></td>
-                                            <td class='help-text'><?php _e( 'You can set the size of button (in px).', 'ssttbutton' ); ?></td>
+                                            <td class='help-text'><?php _e( 'You can set the size of button (in px).', 'simple-scroll-to-top-button' ); ?></td>
                                         </tr>
 
                                         <tr valign='top'>
-                                            <th scope='row'><?php _e( 'Display button on', 'ssttbutton' ); ?></th>
+                                            <th scope='row'><?php _e( 'Display button on', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
                                                 <ul>
-                                                    <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked('', $options['display-button']); ?> ><?php _e( 'Full Website', 'ssttbutton' ); ?><li>
-                                                    <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked('Home Page Only', $options['display-button']); ?> ><?php _e( 'Home Page Only', 'ssttbutton' ); ?></li>
+                                                    <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked('', $options['display-button']); ?> ><?php _e( 'Full Website', 'simple-scroll-to-top-button' ); ?><li>
+                                                    <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked('Home Page Only', $options['display-button']); ?> ><?php _e( 'Home Page Only', 'simple-scroll-to-top-button' ); ?></li>
                                                 </ul>
                                             </td>
                                         </tr>
                                         <tr valign='top'>
                                             <td></td>
-                                            <td class='help-text'><?php _e( 'Select where button need to be appeared.', 'ssttbutton' ); ?></td>
+                                            <td class='help-text'><?php _e( 'Select where button need to be appeared.', 'simple-scroll-to-top-button' ); ?></td>
                                         </tr>
 
                                     </table>
-                                    <?php submit_button( __( 'Save Changes', 'ssttbutton' ), 'primary', 'submit', true ); ?>
+                                    <?php submit_button( __( 'Save Changes', 'simple-scroll-to-top-button' ), 'primary', 'submit', true ); ?>
                                 </div>
                             </div>
 
                             <div class="postbox" id="Preview">
-                                <h3 class="title"><?php _e( 'Preview', 'ssttbutton' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Preview', 'simple-scroll-to-top-button' ) ?></h3>
                                 <div class="inside">
-                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'ssttbutton' ) ?></p></br>
+                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'simple-scroll-to-top-button' ) ?></p></br>
                                     <div id="preview-icon">
                                         <a id="ssttbutton" href="#top">
                                             <span class="fa-stack fa-lg">
@@ -207,12 +213,13 @@ function ssttbutton_render_submenu_page() {
                                 </div>
                             </div>
                             <?php ssttbutton_css_options(); ?>
-                        </div>
+
+                        </form>
+
                     </div>
                 </div>
-                <!-- END-FORM -->
-
-            </form>
+            </div>
+            <!-- END-FORM -->
 
         </div>
 
