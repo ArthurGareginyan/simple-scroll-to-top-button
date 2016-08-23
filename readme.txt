@@ -3,8 +3,8 @@ Contributors: Arthur Gareginyan
 Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.5
-Stable tag: 1.2
+Tested up to: 4.6
+Stable tag: 2.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -33,16 +33,22 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Option to display button in full website or in Home page only
 * Auto hide button on top of webpage
 * Live preview
-* Ready for translation (.pot file included)
-* Russian translation
+* Ready for translation (POT file included)
+
+= Translation =
+
+Please keep in mind that not all translations are up to date. You are welcome to contribute!
+
+* English (default)
+* Russian
 
 >**Contribution**
 >
 >Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 >
->* Please [donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* Please take the time to [rate and review](https://wordpress.org/support/view/plugin-reviews/simple-scroll-to-top-button?rate=5#postform) this plugin.
->* Please [share with me](mailto:arthurgareginyan@gmail.com) if you have any ideas or suggestions to make this plugin better.
+>* [Donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/simple-scroll-to-top-button?rate=5#postform) this plugin.
+>* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/simple-scroll-to-top-button) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
@@ -102,7 +108,7 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 
 
 == Screenshots ==
-1. Plugin’s page. Sections "Settings" and "Preview".
+1. Plugin page. Sections "Settings" and "Preview".
 2. 'Scroll to Top' button displayed on front end of website (Twenty Fifteen theme).
 3. 'Scroll to Top' button (with transparency) displayed on front end of website (Twenty Fifteen theme).
 4. 'Scroll to Top' button displayed on front end of website (Twenty Sixteen theme).
@@ -123,6 +129,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
+= 2.0.1 =
+* POT file updated.
+* Russian translation updated.
+* Image "thanks.png" removed.
+* Advertisement replaced by new.
+* Added the subject with plugin name to email address on settings page.
+* Function "ssttbutton_enqueue_scripts_admin" renamed to "ssttbutton_load_scripts_admin".
+* Function "ssttbutton_enqueue_scripts_frontend" renamed to "ssttbutton_load_scripts_frontend".
 = 2.0 =
 * Some changes in design of settings page.
 * Constants variables added.

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2016-04-08 17:33+0300\n"
+"POT-Creation-Date: 2016-08-23 07:14+0300\n"
 "PO-Revision-Date: 2016-02-24 14:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "X-Poedit-WPHeader: simple-scroll-to-top-button.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -28,7 +28,7 @@ msgstr ""
 #: inc/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"\"Berserkr\" Gareginyan</a>"
+"Gareginyan</a>"
 msgstr ""
 
 #: inc/settings_page.php:38
@@ -56,122 +56,111 @@ msgid "Help"
 msgstr ""
 
 #: inc/settings_page.php:54
-msgid "If you want more options then tell me and I will be happy to add it."
+msgid "Got something to say? Need help?"
 msgstr ""
 
 #: inc/settings_page.php:60
 msgid "Donate"
 msgstr ""
 
-#: inc/settings_page.php:63
+#: inc/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, help me to make this plugin even "
-"better and keep it up-to-date."
+"If you like this plugin and find it useful, please help me to make this "
+"plugin even better and keep it up-to-date."
 msgstr ""
 
-#: inc/settings_page.php:67
+#: inc/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/settings_page.php:72
-msgid "Freelance"
+#: inc/settings_page.php:71
+msgid "Advertisement"
 msgstr ""
 
-#: inc/settings_page.php:75
-msgid ""
-"Hello, my name is Arthur and I'm a freelance web designer and developer."
-msgstr ""
-
-#: inc/settings_page.php:76
-msgid ""
-"Share your thoughts with me. You may have a brilliant idea in your mind and "
-"I can make it happen, so let’s get started!"
-msgstr ""
-
-#: inc/settings_page.php:94 simple-scroll-to-top-button.php:70
+#: inc/settings_page.php:90 simple-scroll-to-top-button.php:70
 msgid "Settings"
 msgstr ""
 
-#: inc/settings_page.php:100
+#: inc/settings_page.php:96
 msgid "Enable \"Scroll to Top\" button"
 msgstr ""
 
-#: inc/settings_page.php:103 inc/settings_page.php:165
+#: inc/settings_page.php:99 inc/settings_page.php:161
 msgid "ON"
 msgstr ""
 
-#: inc/settings_page.php:104 inc/settings_page.php:166
+#: inc/settings_page.php:100 inc/settings_page.php:162
 msgid "OFF"
 msgstr ""
 
-#: inc/settings_page.php:110
+#: inc/settings_page.php:106
 msgid "Button background"
 msgstr ""
 
-#: inc/settings_page.php:116
+#: inc/settings_page.php:112
 msgid "Without background"
 msgstr ""
 
-#: inc/settings_page.php:122
+#: inc/settings_page.php:118
 msgid "Button background color"
 msgstr ""
 
-#: inc/settings_page.php:129
+#: inc/settings_page.php:125
 msgid ""
 "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 
-#: inc/settings_page.php:133
+#: inc/settings_page.php:129
 msgid "Button symbol"
 msgstr ""
 
-#: inc/settings_page.php:151
+#: inc/settings_page.php:147
 msgid "Button symbol color"
 msgstr ""
 
-#: inc/settings_page.php:158
+#: inc/settings_page.php:154
 msgid ""
 "Select the color of symbol inside button. You can also add html HEX color "
 "code."
 msgstr ""
 
-#: inc/settings_page.php:162
+#: inc/settings_page.php:158
 msgid "Button transparency"
 msgstr ""
 
-#: inc/settings_page.php:172
+#: inc/settings_page.php:168
 msgid "Button size"
 msgstr ""
 
-#: inc/settings_page.php:179
+#: inc/settings_page.php:175
 msgid "You can set the size of button (in px)."
 msgstr ""
 
-#: inc/settings_page.php:183
+#: inc/settings_page.php:179
 msgid "Display button on"
 msgstr ""
 
-#: inc/settings_page.php:186
+#: inc/settings_page.php:182
 msgid "Full Website"
 msgstr ""
 
-#: inc/settings_page.php:187
+#: inc/settings_page.php:183
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/settings_page.php:193
+#: inc/settings_page.php:189
 msgid "Select where button need to be appeared."
 msgstr ""
 
-#: inc/settings_page.php:197
+#: inc/settings_page.php:193
 msgid "Save Changes"
 msgstr ""
 
-#: inc/settings_page.php:202
+#: inc/settings_page.php:198
 msgid "Preview"
 msgstr ""
 
-#: inc/settings_page.php:204
+#: inc/settings_page.php:200
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 

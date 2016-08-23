@@ -5,12 +5,12 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0
+ * Version: 2.0.1
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
  *
- * Copyright 2016  Arthur Gareginyan  (email : arthurgareginyan@gmail.com)
+ * Copyright 2016 Arthur Gareginyan (email : arthurgareginyan@gmail.com)
  *
  * This file is part of "Simple Scroll to Top Button".
  *
@@ -37,7 +37,7 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Plugin constants
+ * Define constants
  *
  * @since 2.0
  */
@@ -91,11 +91,11 @@ add_action( 'admin_menu', 'ssttbutton_register_submenu_page' );
 require_once( SSTOPB_PATH . 'inc/settings_page.php' );
 
 /**
- *  Enqueue scripts and style sheet for setting's page
+ * Load scripts and style sheet for settings page
  *
  * @since 2.0
  */
-function ssttbutton_enqueue_scripts_admin($hook) {
+function ssttbutton_load_scripts_admin($hook) {
 
     // Return if the page is not a settings page of this plugin
     if ( 'settings_page_simple-scroll-to-top-button' != $hook ) {
@@ -107,14 +107,14 @@ function ssttbutton_enqueue_scripts_admin($hook) {
     wp_enqueue_style( 'style-admin', SSTOPB_URL . 'inc/style-admin.css' );
     wp_enqueue_style( 'font_awesome_styles', SSTOPB_URL . 'inc/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
 }
-add_action('admin_enqueue_scripts', 'ssttbutton_enqueue_scripts_admin');
+add_action('admin_enqueue_scripts', 'ssttbutton_load_scripts_admin');
 
 /**
- *  Enqueue scripts and style sheet for front end of website
+ *  Load scripts and style sheet for front end of website
  *
  * @since 2.0
  */
-function ssttbutton_enqueue_scripts_frontend() {
+function ssttbutton_load_scripts_frontend() {
 
     // Read options from BD
     $options = get_option( 'ssttbutton_settings' );
@@ -128,7 +128,7 @@ function ssttbutton_enqueue_scripts_frontend() {
         }
     }
 }
-add_action('wp_enqueue_scripts', 'ssttbutton_enqueue_scripts_frontend');
+add_action('wp_enqueue_scripts', 'ssttbutton_load_scripts_frontend');
 
 /**
  * Register settings

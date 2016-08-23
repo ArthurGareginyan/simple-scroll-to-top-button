@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.0
+ * @since 2.0.1
  */
 function ssttbutton_render_submenu_page() {
 
@@ -24,7 +24,7 @@ function ssttbutton_render_submenu_page() {
             <?php _e( 'Simple Scroll to Top Button', 'simple-scroll-to-top-button' ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'simple-scroll-to-top-button' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur Gareginyan</a>', 'simple-scroll-to-top-button' ); ?>
             <span/>
 		</h2>
 
@@ -37,44 +37,40 @@ function ssttbutton_render_submenu_page() {
                     <div id="about" class="postbox">
                         <h3 class="title"><?php _e( 'About', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', 'simple-scroll-to-top-button' ) ?></p>
+                            <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', 'simple-scroll-to-top-button' ); ?></p>
                         </div>
                     </div>
 
                     <div id="using" class="postbox">
                         <h3 class="title"><?php _e( 'Using', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'simple-scroll-to-top-button' ) ?></p>
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'simple-scroll-to-top-button' ); ?></p>
                         </div>
                     </div>
 
                     <div id="help" class="postbox">
                         <h3 class="title"><?php _e( 'Help', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'simple-scroll-to-top-button' ); ?></p>
-                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
+                            <p><?php _e( 'Got something to say? Need help?', 'simple-scroll-to-top-button' ); ?></p>
+                            <p><a href="mailto:arthurgareginyan@gmail.com?subject=Simple Scroll to Top Button">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
                         <h3 class="title"><?php _e( 'Donate', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/thanks.png', __FILE__); ?>">
-                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'simple-scroll-to-top-button' ) ?></p>
+                            <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'simple-scroll-to-top-button' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
                                 <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
-                            <p><?php _e( 'Thanks for your support!', 'simple-scroll-to-top-button' ) ?></p>
+                            <p><?php _e( 'Thanks for your support!', 'simple-scroll-to-top-button' ); ?></p>
                         </div>
                     </div>
 
-                    <div id="freelance" class="postbox">
-                        <h3 class="title"><?php _e( 'Freelance', 'allmetatags' ) ?></h3>
+                    <div id="advertisement" class="postbox">
+                        <h3 class="title"><?php _e( 'Advertisement', 'simple-scroll-to-top-button' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/author.png', __FILE__); ?>">
-                            <p><?php _e( 'Hello, my name is Arthur and I\'m a freelance web designer and developer.', 'allmetatags' ) ?></p>
-                            <p><?php _e( 'Share your thoughts with me. You may have a brilliant idea in your mind and I can make it happen, so let’s get started!', 'allmetatags' ) ?></p>
-                            <p><a href="http://www.arthurgareginyan.com/" target="_blank">www.arthurgareginyan.com</a></p>
+                            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=36439_5_1_21" target="_blank" rel="nofollow"><img style="border:0px" src="http://www.elegantthemes.com/affiliates/media/banners/divi_250x250.jpg" width="250" height="250" alt="Divi WordPress Theme"></a>
                         </div>
                     </div>
 
@@ -91,7 +87,7 @@ function ssttbutton_render_submenu_page() {
                             <?php settings_fields( 'ssttbutton_settings_group' ); ?>
 
                             <div class="postbox" id="Settings">
-                                <h3 class="title"><?php _e( 'Settings', 'simple-scroll-to-top-button' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Settings', 'simple-scroll-to-top-button' ); ?></h3>
                                 <div class="inside">
                                     <p class="description"></p>
                                     <table class="form-table">
@@ -199,9 +195,9 @@ function ssttbutton_render_submenu_page() {
                             </div>
 
                             <div class="postbox" id="Preview">
-                                <h3 class="title"><?php _e( 'Preview', 'simple-scroll-to-top-button' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Preview', 'simple-scroll-to-top-button' ); ?></h3>
                                 <div class="inside">
-                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'simple-scroll-to-top-button' ) ?></p></br>
+                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'simple-scroll-to-top-button' ); ?></p></br>
                                     <div id="preview-icon">
                                         <a id="ssttbutton" href="#top">
                                             <span class="fa-stack fa-lg">

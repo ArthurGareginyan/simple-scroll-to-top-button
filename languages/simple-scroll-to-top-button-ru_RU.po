@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2016-04-08 17:33+0300\n"
-"PO-Revision-Date: 2016-04-08 17:34+0300\n"
+"POT-Creation-Date: 2016-08-23 07:15+0300\n"
+"PO-Revision-Date: 2016-08-23 07:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -29,10 +29,10 @@ msgstr ""
 #: inc/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"\"Berserkr\" Gareginyan</a>"
+"Gareginyan</a>"
 msgstr ""
 "от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
-"“Berserkr” Гарегинян</a>"
+"Гарегинян</a>"
 
 #: inc/settings_page.php:38
 msgid "About"
@@ -63,130 +63,115 @@ msgid "Help"
 msgstr "Помощь"
 
 #: inc/settings_page.php:54
-msgid "If you want more options then tell me and I will be happy to add it."
-msgstr ""
-"Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
-"добавить их."
+msgid "Got something to say? Need help?"
+msgstr "Есть что сказать? Нужна помощь?"
 
 #: inc/settings_page.php:60
 msgid "Donate"
 msgstr "Пожертвование"
 
-#: inc/settings_page.php:63
+#: inc/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, help me to make this plugin even "
-"better and keep it up-to-date."
+"If you like this plugin and find it useful, please help me to make this "
+"plugin even better and keep it up-to-date."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
-"сделать его ещё лучше."
+"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+"помогите мне сделать его ещё лучше."
 
-#: inc/settings_page.php:67
+#: inc/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/settings_page.php:72
-msgid "Freelance"
-msgstr "Фриланс"
+#: inc/settings_page.php:71
+msgid "Advertisement"
+msgstr "Реклама"
 
-#: inc/settings_page.php:75
-msgid ""
-"Hello, my name is Arthur and I'm a freelance web designer and developer."
-msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
-
-#: inc/settings_page.php:76
-msgid ""
-"Share your thoughts with me. You may have a brilliant idea in your mind and "
-"I can make it happen, so let’s get started!"
-msgstr ""
-"Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, а "
-"я могу сделать её явью, так что давайте начнём!"
-
-#: inc/settings_page.php:94 simple-scroll-to-top-button.php:70
+#: inc/settings_page.php:90 simple-scroll-to-top-button.php:70
 msgid "Settings"
 msgstr "Настройки"
 
-#: inc/settings_page.php:100
+#: inc/settings_page.php:96
 msgid "Enable \"Scroll to Top\" button"
 msgstr "Включить кнопку \"Scroll to Top\""
 
-#: inc/settings_page.php:103 inc/settings_page.php:165
+#: inc/settings_page.php:99 inc/settings_page.php:161
 msgid "ON"
 msgstr "ВКЛ"
 
-#: inc/settings_page.php:104 inc/settings_page.php:166
+#: inc/settings_page.php:100 inc/settings_page.php:162
 msgid "OFF"
 msgstr "ВЫКЛ"
 
-#: inc/settings_page.php:110
+#: inc/settings_page.php:106
 msgid "Button background"
 msgstr "Фон кнопки"
 
-#: inc/settings_page.php:116
+#: inc/settings_page.php:112
 msgid "Without background"
 msgstr "Без фона"
 
-#: inc/settings_page.php:122
+#: inc/settings_page.php:118
 msgid "Button background color"
 msgstr "Цвет фона кнопки"
 
-#: inc/settings_page.php:129
+#: inc/settings_page.php:125
 msgid ""
 "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 "Выберите цвет фона кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/settings_page.php:133
+#: inc/settings_page.php:129
 msgid "Button symbol"
 msgstr "Символ кнопки"
 
-#: inc/settings_page.php:151
+#: inc/settings_page.php:147
 msgid "Button symbol color"
 msgstr "Цвет символа кнопки"
 
-#: inc/settings_page.php:158
+#: inc/settings_page.php:154
 msgid ""
 "Select the color of symbol inside button. You can also add html HEX color "
 "code."
 msgstr ""
 "Выберите цвет символа кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/settings_page.php:162
+#: inc/settings_page.php:158
 msgid "Button transparency"
 msgstr "Прозрачности кнопки"
 
-#: inc/settings_page.php:172
+#: inc/settings_page.php:168
 msgid "Button size"
 msgstr "Размер кнопки"
 
-#: inc/settings_page.php:179
+#: inc/settings_page.php:175
 msgid "You can set the size of button (in px)."
 msgstr "Вы можете установить размер кнопки (в пикселях)."
 
-#: inc/settings_page.php:183
+#: inc/settings_page.php:179
 msgid "Display button on"
 msgstr "Отображать кнопку на"
 
-#: inc/settings_page.php:186
+#: inc/settings_page.php:182
 msgid "Full Website"
 msgstr "Весь Веб-сайт"
 
-#: inc/settings_page.php:187
+#: inc/settings_page.php:183
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/settings_page.php:193
+#: inc/settings_page.php:189
 msgid "Select where button need to be appeared."
 msgstr "Выберите, где кнопка должна показываться."
 
-#: inc/settings_page.php:197
+#: inc/settings_page.php:193
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/settings_page.php:202
+#: inc/settings_page.php:198
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/settings_page.php:204
+#: inc/settings_page.php:200
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
@@ -215,6 +200,42 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid "Advertising"
+#~ msgstr "Реклама"
+
+#~ msgid ""
+#~ "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+#~ "\"Berserkr\" Gareginyan</a>"
+#~ msgstr ""
+#~ "от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
+#~ "“Berserkr” Гарегинян</a>"
+
+#~ msgid "If you want more options then tell me and I will be happy to add it."
+#~ msgstr ""
+#~ "Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
+#~ "добавить их."
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, help me to make this plugin "
+#~ "even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
+#~ "сделать его ещё лучше."
+
+#~ msgid "Freelance"
+#~ msgstr "Фриланс"
+
+#~ msgid ""
+#~ "Hello, my name is Arthur and I'm a freelance web designer and developer."
+#~ msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
+
+#~ msgid ""
+#~ "Share your thoughts with me. You may have a brilliant idea in your mind "
+#~ "and I can make it happen, so let’s get started!"
+#~ msgstr ""
+#~ "Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, "
+#~ "а я могу сделать её явью, так что давайте начнём!"
 
 #~ msgid "Arthur \"Berserkr\" Gareginyan"
 #~ msgstr "Артур “Берсеркр” Гарегинян"

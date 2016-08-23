@@ -28,6 +28,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Live preview
 * Ready for translation (.pot file included)
 * Russian translation
+* Published on [WordPess.org](http://wordpess.org/)
 
 **Got more ideas? Tell me!**
 
