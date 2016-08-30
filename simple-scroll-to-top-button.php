@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0.1
+ * Version: 3.0
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -86,14 +86,14 @@ add_action( 'admin_menu', 'ssttbutton_register_submenu_page' );
 /**
  * Attach Settings Page
  *
- * @since 2.0
+ * @since 3.0
  */
-require_once( SSTOPB_PATH . 'inc/settings_page.php' );
+require_once( SSTOPB_PATH . 'inc/php/settings_page.php' );
 
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 2.0
+ * @since 3.0
  */
 function ssttbutton_load_scripts_admin($hook) {
 
@@ -102,17 +102,25 @@ function ssttbutton_load_scripts_admin($hook) {
         return;
     }
 
+    // Style sheet
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_script( 'color-picker', SSTOPB_URL . 'inc/js/color-picker.js', array('wp-color-picker'), false, true );
-    wp_enqueue_style( 'style-admin', SSTOPB_URL . 'inc/style-admin.css' );
-    wp_enqueue_style( 'font_awesome_styles', SSTOPB_URL . 'inc/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+    wp_enqueue_style( 'admin-css', SSTOPB_URL . 'inc/css/admin.css' );
+    wp_enqueue_style( 'font-awesome-styles', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+    wp_enqueue_style( 'bootstrap', SSTOPB_URL . 'inc/css/bootstrap.css' );
+    wp_enqueue_style( 'bootstrap-theme', SSTOPB_URL . 'inc/css/bootstrap-theme.css' );
+
+    // JavaScript
+    wp_enqueue_script( 'admin-js', SSTOPB_URL . 'inc/js/admin.js', array('wp-color-picker'), false, true );
+    wp_enqueue_script( 'back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
+    wp_enqueue_script( 'bootstrap-checkbox', SSTOPB_URL . 'inc/js/bootstrap-checkbox.min.js' );
+
 }
 add_action('admin_enqueue_scripts', 'ssttbutton_load_scripts_admin');
 
 /**
  *  Load scripts and style sheet for front end of website
  *
- * @since 2.0
+ * @since 3.0
  */
 function ssttbutton_load_scripts_frontend() {
 
@@ -120,11 +128,12 @@ function ssttbutton_load_scripts_frontend() {
     $options = get_option( 'ssttbutton_settings' );
 
     // Enqueue script and style sheet of button on front end
-    if ( $options['enable_button'] == 'ON' ){
+    if ( !empty($options['enable_button']) AND $options['enable_button'] == 'ON' ){
         if ( $options['display-button'] == '' || $options['display-button'] == 'Home Page Only' && is_home() || $options['display-button'] == 'Home Page Only' && is_front_page() ){
-            wp_enqueue_script( 'back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false,  true );
-            wp_enqueue_style( 'style-front', SSTOPB_URL . 'inc/style-front.css' );
-            wp_enqueue_style( 'font_awesome_styles', SSTOPB_URL . 'inc/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+
+            wp_enqueue_style( 'font-awesome-styles', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+            wp_enqueue_script( 'back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
+            wp_enqueue_style( 'front-css', SSTOPB_URL . 'inc/css/front.css' );
         }
     }
 }
@@ -143,7 +152,7 @@ add_action( 'admin_init', 'ssttbutton_register_settings' );
 /**
  * Generate the CSS of button from options and add it to head section of website
  *
- * @since 1.0
+ * @since 3.0
  */
 function ssttbutton_css_options() {
 
@@ -171,7 +180,7 @@ function ssttbutton_css_options() {
     ?>
         <style type="text/css">
             #ssttbutton {
-                <?php if (empty($options['transparency_button'])) {
+                <?php if ( !empty($options['transparency_button']) AND $options['transparency_button'] == 'on' ) {
                     echo '
                         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
                         filter: alpha(opacity=50);

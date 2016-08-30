@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.0.1
+ * @since 3.0
  */
 function ssttbutton_render_submenu_page() {
 
@@ -61,7 +61,7 @@ function ssttbutton_render_submenu_page() {
                         <div class="inside">
                             <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'simple-scroll-to-top-button' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
-                                <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
+                                <img src="<?php echo plugins_url('../img/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
                             <p><?php _e( 'Thanks for your support!', 'simple-scroll-to-top-button' ); ?></p>
                         </div>
@@ -95,10 +95,7 @@ function ssttbutton_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Enable "Scroll to Top" button', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
-                                                <ul>
-                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="ON" <?php checked('ON', $options['enable_button']); ?> ><?php _e( 'ON', 'simple-scroll-to-top-button' ); ?></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[enable_button]" value="" <?php checked('', $options['enable_button']); ?> ><?php _e( 'OFF', 'simple-scroll-to-top-button' ); ?></li>
-                                                </ul>
+                                                <input type="checkbox" name="ssttbutton_settings[enable_button]" id="ssttbutton_settings[enable_button]" value="ON" <?php if ( !empty($options['enable_button']) ) { checked( $options['enable_button'], "ON" ); } ?> >
                                             </td>
                                         </tr>
 
@@ -157,10 +154,7 @@ function ssttbutton_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Button transparency', 'simple-scroll-to-top-button' ); ?></th>
                                             <td>
-                                                <ul>
-                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="" <?php checked('', $options['transparency_button']); ?> ><?php _e( 'ON', 'simple-scroll-to-top-button' ); ?></li>
-                                                    <li><input type="radio" name="ssttbutton_settings[transparency_button]" value="OFF" <?php checked('OFF', $options['transparency_button']); ?> ><?php _e( 'OFF', 'simple-scroll-to-top-button' ); ?></li>
-                                                </ul>
+                                                <input type="checkbox" name="ssttbutton_settings[transparency_button]" id="ssttbutton_settings[transparency_button]" value="on" <?php if ( !empty($options['transparency_button']) ) { checked( $options['transparency_button'], "on" ); } ?> >
                                             </td>
                                         </tr>
 

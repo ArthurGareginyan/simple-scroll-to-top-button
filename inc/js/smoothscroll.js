@@ -1,9 +1,14 @@
 /*
- Smooth scroll v1.1 | @agareginyan | GPL v3 Licensed
-*/
+ * Smooth scroll
+ *
+ * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
+ * All Rights Reserved.
+ */
 
 
 jQuery(document).ready(function($) {
+
+    "use strict";
 
     $('#ssttbutton').hide();
 
