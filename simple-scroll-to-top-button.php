@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 3.0
+ * Version: 3.1
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -29,6 +29,7 @@
  *
  */
 
+
 /**
  * Prevent Direct Access
  *
@@ -37,14 +38,15 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Define constants
+ * Define global constants
  *
- * @since 2.0
+ * @since 3.1
  */
 defined('SSTOPB_DIR') or define('SSTOPB_DIR', dirname(plugin_basename(__FILE__)));
 defined('SSTOPB_BASE') or define('SSTOPB_BASE', plugin_basename(__FILE__));
 defined('SSTOPB_URL') or define('SSTOPB_URL', plugin_dir_url(__FILE__));
 defined('SSTOPB_PATH') or define('SSTOPB_PATH', plugin_dir_path(__FILE__));
+defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '3.1');
 
 /**
  * Register text domain
@@ -93,7 +95,7 @@ require_once( SSTOPB_PATH . 'inc/php/settings_page.php' );
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 3.0
+ * @since 3.1
  */
 function ssttbutton_load_scripts_admin($hook) {
 
@@ -104,23 +106,23 @@ function ssttbutton_load_scripts_admin($hook) {
 
     // Style sheet
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_style( 'admin-css', SSTOPB_URL . 'inc/css/admin.css' );
-    wp_enqueue_style( 'font-awesome-styles', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
-    wp_enqueue_style( 'bootstrap', SSTOPB_URL . 'inc/css/bootstrap.css' );
-    wp_enqueue_style( 'bootstrap-theme', SSTOPB_URL . 'inc/css/bootstrap-theme.css' );
+    wp_enqueue_style( 'ssttbutton-admin-css', SSTOPB_URL . 'inc/css/admin.css' );
+    wp_enqueue_style( 'ssttbutton-font-awesome-css', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+    wp_enqueue_style( 'ssttbutton-bootstrap', SSTOPB_URL . 'inc/css/bootstrap.css' );
+    wp_enqueue_style( 'ssttbutton-bootstrap-theme', SSTOPB_URL . 'inc/css/bootstrap-theme.css' );
 
     // JavaScript
-    wp_enqueue_script( 'admin-js', SSTOPB_URL . 'inc/js/admin.js', array('wp-color-picker'), false, true );
-    wp_enqueue_script( 'back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
-    wp_enqueue_script( 'bootstrap-checkbox', SSTOPB_URL . 'inc/js/bootstrap-checkbox.min.js' );
+    wp_enqueue_script( 'ssttbutton-admin-js', SSTOPB_URL . 'inc/js/admin.js', array('wp-color-picker'), false, true );
+    wp_enqueue_script( 'ssttbutton-back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
+    wp_enqueue_script( 'ssttbutton-bootstrap-checkbox', SSTOPB_URL . 'inc/js/bootstrap-checkbox.min.js' );
 
 }
-add_action('admin_enqueue_scripts', 'ssttbutton_load_scripts_admin');
+add_action( 'admin_enqueue_scripts', 'ssttbutton_load_scripts_admin' );
 
 /**
  *  Load scripts and style sheet for front end of website
  *
- * @since 3.0
+ * @since 3.1
  */
 function ssttbutton_load_scripts_frontend() {
 
@@ -128,16 +130,20 @@ function ssttbutton_load_scripts_frontend() {
     $options = get_option( 'ssttbutton_settings' );
 
     // Enqueue script and style sheet of button on front end
-    if ( !empty($options['enable_button']) AND $options['enable_button'] == 'ON' ){
-        if ( $options['display-button'] == '' || $options['display-button'] == 'Home Page Only' && is_home() || $options['display-button'] == 'Home Page Only' && is_front_page() ){
+    if ( !empty($options['enable_button']) AND $options['enable_button'] == 'ON' ) {
 
-            wp_enqueue_style( 'font-awesome-styles', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
-            wp_enqueue_script( 'back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
-            wp_enqueue_style( 'front-css', SSTOPB_URL . 'inc/css/front.css' );
+        if ( $options['display-button'] == '' || $options['display-button'] == 'Home Page Only' && is_home() || $options['display-button'] == 'Home Page Only' && is_front_page() ) {
+
+            // Style sheet
+            wp_enqueue_style( 'ssttbutton-font-awesome-css', SSTOPB_URL . 'inc/lib/font-awesome-4.5.0/css/font-awesome.min.css', 'screen' );
+            wp_enqueue_style( 'ssttbutton-front-css', SSTOPB_URL . 'inc/css/front.css' );
+
+            // JavaScript
+            wp_enqueue_script( 'ssttbutton-back-to-top-button', SSTOPB_URL . 'inc/js/smoothscroll.js', array('jquery'), false, true );
         }
     }
 }
-add_action('wp_enqueue_scripts', 'ssttbutton_load_scripts_frontend');
+add_action( 'wp_enqueue_scripts', 'ssttbutton_load_scripts_frontend' );
 
 /**
  * Register settings
@@ -200,7 +206,7 @@ function ssttbutton_css_options() {
         </style>
     <?php
 }
-add_action('wp_head' , 'ssttbutton_css_options');
+add_action( 'wp_head' , 'ssttbutton_css_options' );
 
 /**
  * Add DIV container with button to footer.
@@ -221,7 +227,7 @@ function ssttbutton_add_container() {
         </a>
     <?php
 }
-add_action('wp_footer', 'ssttbutton_add_container', 999);
+add_action( 'wp_footer', 'ssttbutton_add_container', 999 );
 
 /**
  * Delete options on uninstall
