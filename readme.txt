@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.6
-Stable tag: 3.1
+Stable tag: 3.2
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -41,6 +41,7 @@ Please keep in mind that not all translations are up to date. You are welcome to
 
 * English (default)
 * Russian
+* Spanish (translation by [Ramiro Garcés](http://www.ramirogarces.com.ve/))
 
 >**Contribution**
 >
@@ -56,17 +57,17 @@ Install "Simple Scroll to Top Button" just as you would any other WordPress Plug
 
 Automatically via WordPress:
 
-1. Log into WordPress Dashboard of your website.
-2. Go to "`Plugins`" —> "`add new plugins`".
+1. Log into Dashboard of your WordPress website.
+2. Go to "`Plugins`" —> "`Add New`".
 3. Find this plugin and click install.
 4. Activate this plugin through the "`Plugins`" tab.
 
 Manual via FTP:
 
-1. Download a copy (zip file) of this plugin from WordPress.org.
-2. Unzip the zip file.
-3. Upload the unzipped directory to your website's plugin directory (`/wp-content/plugins/`).
-4. Log into WordPress Dashboard of your website.
+1. Download a copy (ZIP file) of this plugin from WordPress.org.
+2. Unzip the ZIP file.
+3. Upload the unzipped catalog to your website's plugin directory (`/wp-content/plugins/`).
+4. Log into Dashboard of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
 After installation, a "`Scroll to Top`" menu item will appear in the "`Settings`" section. Click on this in order to view plugin's administration page.
@@ -75,7 +76,7 @@ After installation, a "`Scroll to Top`" menu item will appear in the "`Settings
 
 
 == Frequently Asked Questions ==
-= Q. Will this Plugin work on my WordPress.COM website? =
+= Q. Will this plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.org) websites.
 
 = Q. Can I use this plugin on my language? =
@@ -135,6 +136,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 == Changelog ==
+= 3.2 =
+* Added Spanish translation. (Thanks [Ramiro Garcés](http://www.ramirogarces.com.ve/))
+* Added the Readme.txt file for translation contribution.
+* Added global constant for plugin text-domain.
 = 3.1 =
 * Added prefixes to the stylesheet and script names when using wp_enqueue_style() and wp_enqueue_script().
 * Added constant for storing the plugin version number.

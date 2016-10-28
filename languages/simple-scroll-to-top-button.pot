@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2016-08-23 07:14+0300\n"
+"POT-Creation-Date: 2016-09-20 03:21+0300\n"
 "PO-Revision-Date: 2016-02-24 14:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,150 +21,143 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:24
+#: inc/php/settings_page.php:24
 msgid "Simple Scroll to Top Button"
 msgstr ""
 
-#: inc/settings_page.php:27
+#: inc/php/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
 "Gareginyan</a>"
 msgstr ""
 
-#: inc/settings_page.php:38
+#: inc/php/settings_page.php:38
 msgid "About"
 msgstr ""
 
-#: inc/settings_page.php:40
+#: inc/php/settings_page.php:40
 msgid ""
 "This plugin allows you to easily add the \"Scroll to Top\" button to your "
 "website in a simple and elegant way."
 msgstr ""
 
-#: inc/settings_page.php:45
+#: inc/php/settings_page.php:45
 msgid "Using"
 msgstr ""
 
-#: inc/settings_page.php:47
+#: inc/php/settings_page.php:47
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
 msgstr ""
 
-#: inc/settings_page.php:52
+#: inc/php/settings_page.php:52
 msgid "Help"
 msgstr ""
 
-#: inc/settings_page.php:54
+#: inc/php/settings_page.php:54
 msgid "Got something to say? Need help?"
 msgstr ""
 
-#: inc/settings_page.php:60
+#: inc/php/settings_page.php:60
 msgid "Donate"
 msgstr ""
 
-#: inc/settings_page.php:62
+#: inc/php/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, please help me to make this "
-"plugin even better and keep it up-to-date."
+"I'm an independent developer, without a regular income, so every little "
+"contribution helps cover my costs and lets me spend more time building "
+"things for people like you to enjoy."
 msgstr ""
 
-#: inc/settings_page.php:66
+#: inc/php/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/settings_page.php:71
+#: inc/php/settings_page.php:71
 msgid "Advertisement"
 msgstr ""
 
-#: inc/settings_page.php:90 simple-scroll-to-top-button.php:70
+#: inc/php/settings_page.php:90 simple-scroll-to-top-button.php:73
 msgid "Settings"
 msgstr ""
 
-#: inc/settings_page.php:96
+#: inc/php/settings_page.php:96
 msgid "Enable \"Scroll to Top\" button"
 msgstr ""
 
-#: inc/settings_page.php:99 inc/settings_page.php:161
-msgid "ON"
-msgstr ""
-
-#: inc/settings_page.php:100 inc/settings_page.php:162
-msgid "OFF"
-msgstr ""
-
-#: inc/settings_page.php:106
+#: inc/php/settings_page.php:103
 msgid "Button background"
 msgstr ""
 
-#: inc/settings_page.php:112
+#: inc/php/settings_page.php:109
 msgid "Without background"
 msgstr ""
 
-#: inc/settings_page.php:118
+#: inc/php/settings_page.php:115
 msgid "Button background color"
 msgstr ""
 
-#: inc/settings_page.php:125
+#: inc/php/settings_page.php:122
 msgid ""
 "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 
-#: inc/settings_page.php:129
+#: inc/php/settings_page.php:126
 msgid "Button symbol"
 msgstr ""
 
-#: inc/settings_page.php:147
+#: inc/php/settings_page.php:144
 msgid "Button symbol color"
 msgstr ""
 
-#: inc/settings_page.php:154
+#: inc/php/settings_page.php:151
 msgid ""
 "Select the color of symbol inside button. You can also add html HEX color "
 "code."
 msgstr ""
 
-#: inc/settings_page.php:158
+#: inc/php/settings_page.php:155
 msgid "Button transparency"
 msgstr ""
 
-#: inc/settings_page.php:168
+#: inc/php/settings_page.php:162
 msgid "Button size"
 msgstr ""
 
-#: inc/settings_page.php:175
+#: inc/php/settings_page.php:169
 msgid "You can set the size of button (in px)."
 msgstr ""
 
-#: inc/settings_page.php:179
+#: inc/php/settings_page.php:173
 msgid "Display button on"
 msgstr ""
 
-#: inc/settings_page.php:182
+#: inc/php/settings_page.php:176
 msgid "Full Website"
 msgstr ""
 
-#: inc/settings_page.php:183
+#: inc/php/settings_page.php:177
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/settings_page.php:189
+#: inc/php/settings_page.php:183
 msgid "Select where button need to be appeared."
 msgstr ""
 
-#: inc/settings_page.php:193
+#: inc/php/settings_page.php:187
 msgid "Save Changes"
 msgstr ""
 
-#: inc/settings_page.php:198
+#: inc/php/settings_page.php:192
 msgid "Preview"
 msgstr ""
 
-#: inc/settings_page.php:200
+#: inc/php/settings_page.php:194
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 
-#: simple-scroll-to-top-button.php:82
+#: simple-scroll-to-top-button.php:85
 msgid "Scroll to Top"
 msgstr ""
 

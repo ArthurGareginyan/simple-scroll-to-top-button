@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 3.1
+ * Version: 3.2
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -40,13 +40,14 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Define global constants
  *
- * @since 3.1
+ * @since 3.2
  */
 defined('SSTOPB_DIR') or define('SSTOPB_DIR', dirname(plugin_basename(__FILE__)));
 defined('SSTOPB_BASE') or define('SSTOPB_BASE', plugin_basename(__FILE__));
 defined('SSTOPB_URL') or define('SSTOPB_URL', plugin_dir_url(__FILE__));
 defined('SSTOPB_PATH') or define('SSTOPB_PATH', plugin_dir_path(__FILE__));
-defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '3.1');
+defined('SSTOPB_TEXT') or define('SSTOPB_TEXT', 'simple-scroll-to-top-button');
+defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '3.2');
 
 /**
  * Register text domain
@@ -54,7 +55,7 @@ defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '3.1');
  * @since 2.0
  */
 function ssttbutton_textdomain() {
-	load_plugin_textdomain( 'simple-scroll-to-top-button', false, SSTOPB_DIR . '/languages/' );
+	load_plugin_textdomain( SSTOPB_TEXT, false, SSTOPB_DIR . '/languages/' );
 }
 add_action( 'init', 'ssttbutton_textdomain' );
 
@@ -69,11 +70,11 @@ add_action( 'init', 'ssttbutton_textdomain' );
  * @return array        Array of links to be output on Plugin Admin page.
  */
 function ssttbutton_settings_link( $links ) {
-	$settings_page = '<a href="' . admin_url( 'options-general.php?page=simple-scroll-to-top-button.php' ) .'">' . __( 'Settings', 'simple-scroll-to-top-button' ) . '</a>';
+	$settings_page = '<a href="' . admin_url( 'options-general.php?page=simple-scroll-to-top-button.php' ) .'">' . __( 'Settings', SSTOPB_TEXT ) . '</a>';
 	array_unshift( $links, $settings_page );
 	return $links;
 }
-add_filter( "plugin_action_links_".SSTOPB_BASE, 'ssttbutton_settings_link' );
+add_filter( 'plugin_action_links_'.SSTOPB_BASE, 'ssttbutton_settings_link' );
 
 /**
  * Register "Scroll to Top" submenu in "Settings" Admin Menu
@@ -81,7 +82,7 @@ add_filter( "plugin_action_links_".SSTOPB_BASE, 'ssttbutton_settings_link' );
  * @since 2.0
  */
 function ssttbutton_register_submenu_page() {
-	add_options_page( __( 'Scroll to Top', 'simple-scroll-to-top-button' ), __( 'Scroll to Top', 'simple-scroll-to-top-button' ), 'manage_options', basename( __FILE__ ), 'ssttbutton_render_submenu_page' );
+	add_options_page( __( 'Scroll to Top', SSTOPB_TEXT ), __( 'Scroll to Top', SSTOPB_TEXT ), 'manage_options', basename( __FILE__ ), 'ssttbutton_render_submenu_page' );
 }
 add_action( 'admin_menu', 'ssttbutton_register_submenu_page' );
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2016-08-23 07:15+0300\n"
-"PO-Revision-Date: 2016-08-23 07:15+0300\n"
+"POT-Creation-Date: 2016-09-20 03:23+0300\n"
+"PO-Revision-Date: 2016-09-23 23:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:24
+#: inc/php/settings_page.php:24
 msgid "Simple Scroll to Top Button"
 msgstr ""
 
-#: inc/settings_page.php:27
+#: inc/php/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
 "Gareginyan</a>"
@@ -34,11 +34,11 @@ msgstr ""
 "от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
 "Гарегинян</a>"
 
-#: inc/settings_page.php:38
+#: inc/php/settings_page.php:38
 msgid "About"
-msgstr "О платине"
+msgstr "О плагине"
 
-#: inc/settings_page.php:40
+#: inc/php/settings_page.php:40
 msgid ""
 "This plugin allows you to easily add the \"Scroll to Top\" button to your "
 "website in a simple and elegant way."
@@ -46,11 +46,11 @@ msgstr ""
 "Этот плагин позволяет легко добавлять кнопку «Scroll to Top» на ваш сайт в "
 "простой и элегантный способ."
 
-#: inc/settings_page.php:45
+#: inc/php/settings_page.php:45
 msgid "Using"
-msgstr "Использование:"
+msgstr "Как пользоваться"
 
-#: inc/settings_page.php:47
+#: inc/php/settings_page.php:47
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
@@ -58,124 +58,118 @@ msgstr ""
 "Для использования, выберите нужные параметры, а затем нажмите кнопку "
 "«Сохранить изменения». Это так просто!"
 
-#: inc/settings_page.php:52
+#: inc/php/settings_page.php:52
 msgid "Help"
 msgstr "Помощь"
 
-#: inc/settings_page.php:54
+#: inc/php/settings_page.php:54
 msgid "Got something to say? Need help?"
 msgstr "Есть что сказать? Нужна помощь?"
 
-#: inc/settings_page.php:60
+#: inc/php/settings_page.php:60
 msgid "Donate"
-msgstr "Пожертвование"
+msgstr "Поддержать разработку"
 
-#: inc/settings_page.php:62
+#: inc/php/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, please help me to make this "
-"plugin even better and keep it up-to-date."
+"I'm an independent developer, without a regular income, so every little "
+"contribution helps cover my costs and lets me spend more time building "
+"things for people like you to enjoy."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
-"помогите мне сделать его ещё лучше."
+"Я независимый разработчик, без регулярного дохода, так что каждый маленький "
+"вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
+"создание программ для людей как вы."
 
-#: inc/settings_page.php:66
+#: inc/php/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/settings_page.php:71
+#: inc/php/settings_page.php:71
 msgid "Advertisement"
 msgstr "Реклама"
 
-#: inc/settings_page.php:90 simple-scroll-to-top-button.php:70
+#: inc/php/settings_page.php:90 simple-scroll-to-top-button.php:73
 msgid "Settings"
 msgstr "Настройки"
 
-#: inc/settings_page.php:96
+#: inc/php/settings_page.php:96
 msgid "Enable \"Scroll to Top\" button"
 msgstr "Включить кнопку \"Scroll to Top\""
 
-#: inc/settings_page.php:99 inc/settings_page.php:161
-msgid "ON"
-msgstr "ВКЛ"
-
-#: inc/settings_page.php:100 inc/settings_page.php:162
-msgid "OFF"
-msgstr "ВЫКЛ"
-
-#: inc/settings_page.php:106
+#: inc/php/settings_page.php:103
 msgid "Button background"
 msgstr "Фон кнопки"
 
-#: inc/settings_page.php:112
+#: inc/php/settings_page.php:109
 msgid "Without background"
 msgstr "Без фона"
 
-#: inc/settings_page.php:118
+#: inc/php/settings_page.php:115
 msgid "Button background color"
 msgstr "Цвет фона кнопки"
 
-#: inc/settings_page.php:125
+#: inc/php/settings_page.php:122
 msgid ""
 "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 "Выберите цвет фона кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/settings_page.php:129
+#: inc/php/settings_page.php:126
 msgid "Button symbol"
 msgstr "Символ кнопки"
 
-#: inc/settings_page.php:147
+#: inc/php/settings_page.php:144
 msgid "Button symbol color"
 msgstr "Цвет символа кнопки"
 
-#: inc/settings_page.php:154
+#: inc/php/settings_page.php:151
 msgid ""
 "Select the color of symbol inside button. You can also add html HEX color "
 "code."
 msgstr ""
 "Выберите цвет символа кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/settings_page.php:158
+#: inc/php/settings_page.php:155
 msgid "Button transparency"
-msgstr "Прозрачности кнопки"
+msgstr "Прозрачность кнопки"
 
-#: inc/settings_page.php:168
+#: inc/php/settings_page.php:162
 msgid "Button size"
 msgstr "Размер кнопки"
 
-#: inc/settings_page.php:175
+#: inc/php/settings_page.php:169
 msgid "You can set the size of button (in px)."
 msgstr "Вы можете установить размер кнопки (в пикселях)."
 
-#: inc/settings_page.php:179
+#: inc/php/settings_page.php:173
 msgid "Display button on"
 msgstr "Отображать кнопку на"
 
-#: inc/settings_page.php:182
+#: inc/php/settings_page.php:176
 msgid "Full Website"
 msgstr "Весь Веб-сайт"
 
-#: inc/settings_page.php:183
+#: inc/php/settings_page.php:177
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/settings_page.php:189
+#: inc/php/settings_page.php:183
 msgid "Select where button need to be appeared."
 msgstr "Выберите, где кнопка должна показываться."
 
-#: inc/settings_page.php:193
+#: inc/php/settings_page.php:187
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/settings_page.php:198
+#: inc/php/settings_page.php:192
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/settings_page.php:200
+#: inc/php/settings_page.php:194
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
-#: simple-scroll-to-top-button.php:82
+#: simple-scroll-to-top-button.php:85
 msgid "Scroll to Top"
 msgstr ""
 
@@ -200,6 +194,19 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, please help me to make this "
+#~ "plugin even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+#~ "помогите мне сделать его ещё лучше."
+
+#~ msgid "ON"
+#~ msgstr "ВКЛ"
+
+#~ msgid "OFF"
+#~ msgstr "ВЫКЛ"
 
 #~ msgid "Advertising"
 #~ msgstr "Реклама"
