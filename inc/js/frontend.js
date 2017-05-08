@@ -1,8 +1,11 @@
 /*
- * Smooth scroll
+ * Plugin JavaScript and JQuery code for the front end of website
  *
- * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
- * All Rights Reserved.
+ * @package     Simple Scroll to Top Button
+ * @uthor       Arthur Gareginyan
+ * @link        http://www.arthurgareginyan.com
+ * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
+ * @since       4.0
  */
 
 
