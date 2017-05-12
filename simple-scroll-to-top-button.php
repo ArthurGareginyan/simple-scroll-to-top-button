@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.0
+ * Version: 4.0.1
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -62,7 +62,7 @@ defined('SSTOPB_BASE') or define('SSTOPB_BASE', plugin_basename(__FILE__));
 defined('SSTOPB_URL') or define('SSTOPB_URL', plugin_dir_url(__FILE__));
 defined('SSTOPB_PATH') or define('SSTOPB_PATH', plugin_dir_path(__FILE__));
 defined('SSTOPB_TEXT') or define('SSTOPB_TEXT', 'simple-scroll-to-top-button');
-defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '4.0');
+defined('SSTOPB_VERSION') or define('SSTOPB_VERSION', '4.0.1');
 
 /**
  * Load the plugin modules
