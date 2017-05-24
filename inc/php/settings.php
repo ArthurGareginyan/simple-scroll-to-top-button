@@ -5,12 +5,12 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Tab
  *
- * @since 3.0
+ * @since 4.1
  */
 ?>
     <!-- SIDEBAR -->
@@ -37,7 +37,7 @@ defined('ABSPATH') or die("Restricted access!");
                 <h3 class="title"><?php _e( 'Help', SSTOPB_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'Got something to say? Need help?', SSTOPB_TEXT ); ?></p>
-                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=Simple Scroll to Top Button">arthurgareginyan@gmail.com</a></p>
+                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=<?php echo SSTOPB_NAME; ?>">arthurgareginyan@gmail.com</a></p>
                 </div>
             </div>
 
@@ -50,12 +50,17 @@ defined('ABSPATH') or die("Restricted access!");
         <div id="post-body-content" class="has-sidebar-content">
             <div class="meta-box-sortabless">
 
-                <form name="ssttbutton-form" action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( 'ssttbutton_settings_group' ); ?>
+                <form action="options.php" method="post" enctype="multipart/form-data">
+                    <?php settings_fields( SSTOPB_SETTINGS . '_settings_group' ); ?>
 
                     <?php
                         // Get options from the BD
-                        $options = get_option( 'ssttbutton_settings' );
+                        $options = get_option( SSTOPB_SETTINGS . '_settings' );
+
+                        // Set default value if the option is empty
+                        $background_button = isset( $options['background_button'] ) && !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
+                        $background_color = isset( $options['background-color'] ) && !empty( $options['background-color'] ) ? $options['background-color'] : '#000000';
+                        $image_button = isset( $options['image_button'] ) && !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
                     ?>
 
                     <div class="postbox" id="Settings">
@@ -65,31 +70,31 @@ defined('ABSPATH') or die("Restricted access!");
 
                             <table class="form-table">
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Enable "Scroll to Top" button', SSTOPB_TEXT ); ?></th>
-                                    <td>
-                                        <input type="checkbox" name="ssttbutton_settings[enable_button]" id="ssttbutton_settings[enable_button]" value="ON" <?php if ( !empty($options['enable_button']) ) { checked( $options['enable_button'], "ON" ); } ?> >
-                                    </td>
-                                </tr>
+                                <?php ssttbutton_setting( 'enable_button',
+                                                          __( 'Enable "Scroll to Top" button', SSTOPB_TEXT ),
+                                                          '',
+                                                          'check'
+                                                         );
+                                ?>
 
                                 <tr>
                                     <th scope='row'><?php _e( 'Button background', SSTOPB_TEXT ); ?></th>
                                     <td>
                                         <ul>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked('fa-square', $options['background_button']); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked('fa-square', $background_button); ?> >
                                                 <i class="fa fa-square fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $options['background_button']); ?> <?php checked('fa-square-o', $options['background_button']); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $background_button); ?> >
                                                 <i class="fa fa-square-o fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked('', $options['background_button']); ?> <?php checked('fa-circle', $options['background_button']); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked('', $background_button); ?> <?php checked('fa-circle', $background_button); ?> >
                                                 <i class="fa fa-circle fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $options['background_button']); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $background_button); ?> >
                                                 <?php _e( 'Without background', SSTOPB_TEXT ); ?>
                                             </li>
                                         </ul>
@@ -99,7 +104,7 @@ defined('ABSPATH') or die("Restricted access!");
                                 <tr>
                                     <th scope='row'><?php _e( 'Button background color', SSTOPB_TEXT ); ?></th>
                                     <td>
-                                        <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php if ( !empty( $options['background-color'] ) ) { echo $options['background-color']; } else { echo '#000000'; }  ?>" placeholder="#000000" class="color-picker">
+                                        <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#000000" class="color-picker">
                                     </td>
                                 </tr>
                                 <tr>
@@ -111,16 +116,16 @@ defined('ABSPATH') or die("Restricted access!");
                                     <th scope='row'><?php _e( 'Button symbol', SSTOPB_TEXT ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $options['image_button']); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $options['image_button']); ?> ><i class="fa fa-level-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $options['image_button']); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-hand-o-up" <?php checked('', $options['image_button']); ?> <?php checked('fa-hand-o-up', $options['image_button']); ?> ><i class="fa fa-hand-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-square-o-up" <?php checked('fa-caret-square-o-up', $options['image_button']); ?> ><i class="fa fa-caret-square-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-long-arrow-up" <?php checked('fa-long-arrow-up', $options['image_button']); ?> ><i class="fa fa-long-arrow-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-chevron-up" <?php checked('fa-chevron-up', $options['image_button']); ?> ><i class="fa fa-chevron-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-up" <?php checked('fa-angle-up', $options['image_button']); ?> ><i class="fa fa-angle-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-up" <?php checked('fa-caret-up', $options['image_button']); ?> ><i class="fa fa-caret-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-double-up" <?php checked('fa-angle-double-up', $options['image_button']); ?> ><i class="fa fa-angle-double-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $image_button); ?> ><i class="fa fa-level-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $image_button); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-hand-o-up" <?php checked('', $image_button); ?> <?php checked('fa-hand-o-up', $image_button); ?> ><i class="fa fa-hand-o-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-square-o-up" <?php checked('fa-caret-square-o-up', $image_button); ?> ><i class="fa fa-caret-square-o-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-long-arrow-up" <?php checked('fa-long-arrow-up', $image_button); ?> ><i class="fa fa-long-arrow-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-chevron-up" <?php checked('fa-chevron-up', $image_button); ?> ><i class="fa fa-chevron-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-up" <?php checked('fa-angle-up', $image_button); ?> ><i class="fa fa-angle-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-up" <?php checked('fa-caret-up', $image_button); ?> ><i class="fa fa-caret-up fa-2x"></i></li>
+                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-double-up" <?php checked('fa-angle-double-up', $image_button); ?> ><i class="fa fa-angle-double-up fa-2x"></i></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -136,23 +141,30 @@ defined('ABSPATH') or die("Restricted access!");
                                     <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', SSTOPB_TEXT ); ?></td>
                                 </tr>
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button transparency', SSTOPB_TEXT ); ?></th>
-                                    <td>
-                                        <input type="checkbox" name="ssttbutton_settings[transparency_button]" id="ssttbutton_settings[transparency_button]" value="on" <?php if ( !empty($options['transparency_button']) ) { checked( $options['transparency_button'], "on" ); } ?> >
-                                    </td>
-                                </tr>
+                                <?php ssttbutton_setting( 'transparency_button',
+                                                          __( 'Button transparency', SSTOPB_TEXT ),
+                                                          '',
+                                                          'check'
+                                                        );
+                                ?>
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button size', SSTOPB_TEXT ); ?></th>
-                                    <td>
-                                        <input type="text" name="ssttbutton_settings[size_button]" id="ssttbutton_settings[size_button]" value="<?php echo $options['size_button']; ?>" placeholder="32" size="2" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'You can set the size of button (in px).', SSTOPB_TEXT ); ?></td>
-                                </tr>
+                                <?php ssttbutton_setting( 'size_button',
+                                                          __( 'Button size', SSTOPB_TEXT ),
+                                                          __( 'You can set the size of button (in px). The default size is 32 pixels.', SSTOPB_TEXT ),
+                                                          'field',
+                                                          '32',
+                                                          '2'
+                                                         );
+                                ?>
+
+                                <?php ssttbutton_setting( 'scroll_duration',
+                                                          __( 'Scroll duration', SSTOPB_TEXT ),
+                                                          __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', SSTOPB_TEXT ),
+                                                          'field',
+                                                          '300',
+                                                          '5'
+                                                         );
+                                ?>
 
                                 <tr>
                                     <th scope='row'><?php _e( 'Display button on', SSTOPB_TEXT ); ?></th>
@@ -169,7 +181,9 @@ defined('ABSPATH') or die("Restricted access!");
                                 </tr>
 
                             </table>
+
                             <?php submit_button( __( 'Save Changes', SSTOPB_TEXT ), 'primary', 'submit', true ); ?>
+
                         </div>
                     </div>
 
@@ -180,16 +194,17 @@ defined('ABSPATH') or die("Restricted access!");
                             <div id="preview-icon">
                                 <a id="ssttbutton" href="#top">
                                     <span class="fa-stack fa-lg">
-                                        <i class="ssttbutton-background fa <?php if ( !empty( $options['background_button'] ) ) { echo $options['background_button']; } else { echo 'fa-circle'; }  ?> fa-stack-2x"></i>
-                                        <i class="ssttbutton-symbol fa <?php if ( !empty( $options['image_button'] ) ) { echo $options['image_button']; } else { echo 'fa-hand-o-up'; }  ?> fa-stack-1x"></i>
+                                        <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>
+                                        <i class="ssttbutton-symbol fa <?php echo $image_button; ?> fa-stack-1x"></i>
                                     </span>
                                 </a>
                             </div>
                         </div>
                     </div>
+
                     <?php ssttbutton_css_options(); ?>
 
-                    <div id="support-addition" class="postbox">
+                    <div class="postbox" id="support-addition">
                         <h3 class="title"><?php _e( 'Support', SSTOPB_TEXT ); ?></h3>
                         <div class="inside">
                             <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', SSTOPB_TEXT ); ?></p>

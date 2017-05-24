@@ -5,14 +5,14 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Delete options on uninstall
  *
- * @since 0.1
+ * @since 4.1
  */
 function ssttbutton_uninstall() {
-    delete_option( 'ssttbutton_settings' );
+    delete_option( SSTOPB_SETTINGS . '_settings' );
 }
-register_uninstall_hook( __FILE__, 'ssttbutton_uninstall' );
+register_uninstall_hook( __FILE__, SSTOPB_PREFIX . '_uninstall' );

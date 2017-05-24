@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.0
+ * @since       4.1
  */
 
 
@@ -13,6 +13,10 @@ jQuery(document).ready(function($) {
 
     "use strict";
 
+    // Set variables
+    var duration = parseInt( ssttbutton_scriptParams["scroll_duration"] );
+
+    // Hide button by default
     $('#ssttbutton').hide();
 
 	$(window).scroll(function() {
@@ -23,8 +27,9 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // Click on button
 	$('#ssttbutton').on('click', function() {
-		$('html, body').animate({scrollTop:0}, 'fast');
+		$('html, body').animate({scrollTop:0}, duration);
 		return false;
     });
 

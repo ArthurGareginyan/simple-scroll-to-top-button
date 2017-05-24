@@ -22,6 +22,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Symbol color changer (Unlimited colors)
 * Changeable button background and symbol
 * Changeable size of button
+* Changeable scroll duration
 * Option to enable/disable button
 * Option to display button in full website or in Home page only
 * Auto hide button on top of webpage
