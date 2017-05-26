@@ -48,12 +48,12 @@ function ssttbutton_hello_message() {
 /**
  * Error message (When the old version of plugin installed) - Bootstrap Modal
  *
- * @since 4.1
+ * @since 4.2
  */
 function ssttbutton_error_message() {
 
     $info = get_option( SSTOPB_SETTINGS . '_service_info' );
-    $old_version = isset( $info['old_version'] ) && !empty( $info['old_version'] ) ? $info['old_version'] : '0';
+    $old_version = !empty( $info['old_version'] ) ? $info['old_version'] : '0';
 
     if ( $old_version != '1' ) {
         return;

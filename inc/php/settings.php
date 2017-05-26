@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.1
+ * @since 4.2
  */
 ?>
     <!-- SIDEBAR -->
@@ -54,13 +54,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php settings_fields( SSTOPB_SETTINGS . '_settings_group' ); ?>
 
                     <?php
-                        // Get options from the BD
+                        // Get options from the database
                         $options = get_option( SSTOPB_SETTINGS . '_settings' );
 
-                        // Set default value if the option is empty
-                        $background_button = isset( $options['background_button'] ) && !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
-                        $background_color = isset( $options['background-color'] ) && !empty( $options['background-color'] ) ? $options['background-color'] : '#000000';
-                        $image_button = isset( $options['image_button'] ) && !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
+                        // Set default value if option is empty
+                        $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
+                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#000000';
+                        $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
+                        $display_button = !empty( $options['display-button'] ) ? $options['display-button'] : '';
                     ?>
 
                     <div class="postbox" id="Settings">
@@ -82,19 +83,19 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <td>
                                         <ul>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked('fa-square', $background_button); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked( 'fa-square', $background_button ); ?> >
                                                 <i class="fa fa-square fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked('fa-square-o', $background_button); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked( 'fa-square-o', $background_button ); ?> >
                                                 <i class="fa fa-square-o fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked('', $background_button); ?> <?php checked('fa-circle', $background_button); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked( '', $background_button ); ?> <?php checked( 'fa-circle', $background_button ); ?> >
                                                 <i class="fa fa-circle fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked(' ', $background_button); ?> >
+                                                <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked( ' ', $background_button ); ?> >
                                                 <?php _e( 'Without background', SSTOPB_TEXT ); ?>
                                             </li>
                                         </ul>
@@ -170,8 +171,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <th scope='row'><?php _e( 'Display button on', SSTOPB_TEXT ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked('', $options['display-button']); ?> ><?php _e( 'Full Website', SSTOPB_TEXT ); ?><li>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked('Home Page Only', $options['display-button']); ?> ><?php _e( 'Home Page Only', SSTOPB_TEXT ); ?></li>
+                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', SSTOPB_TEXT ); ?><li>
+                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', SSTOPB_TEXT ); ?></li>
                                         </ul>
                                     </td>
                                 </tr>
