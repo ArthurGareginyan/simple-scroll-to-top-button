@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.2
+ * Version: 4.3
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -79,7 +79,7 @@ ssttbutton_define_constants( 'SETTINGS', 'ssttbutton' );
  */
 require_once( SSTOPB_PATH . 'inc/php/core.php' );
 require_once( SSTOPB_PATH . 'inc/php/upgrade.php' );
-require_once( SSTOPB_PATH . 'inc/php/version.php' );
+require_once( SSTOPB_PATH . 'inc/php/versioning.php' );
 require_once( SSTOPB_PATH . 'inc/php/enqueue.php' );
 require_once( SSTOPB_PATH . 'inc/php/functional.php' );
 require_once( SSTOPB_PATH . 'inc/php/page.php' );

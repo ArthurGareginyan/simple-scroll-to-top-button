@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.2
+ * @since 4.3
  */
 ?>
     <!-- SIDEBAR -->
@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <h3 class="title"><?php _e( 'About', SSTOPB_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', SSTOPB_TEXT ); ?></p>
+                    <p class="version"><?php _e( 'Version', SSTOPB_TEXT ); ?> <?php echo SSTOPB_VERSION; ?></p>
                 </div>
             </div>
 

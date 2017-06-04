@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2017-05-24 05:56+0300\n"
-"PO-Revision-Date: 2017-05-24 05:56+0300\n"
+"POT-Creation-Date: 2017-06-04 13:32+0300\n"
+"PO-Revision-Date: 2017-06-04 13:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -67,8 +67,8 @@ msgstr "F.A.Q."
 msgid "Author"
 msgstr "Автор"
 
-#: inc/php/page.php:44 inc/php/page.php:169 inc/php/settings.php:28
-#: inc/php/settings.php:203
+#: inc/php/page.php:44 inc/php/page.php:169 inc/php/settings.php:29
+#: inc/php/settings.php:210
 msgid "Support"
 msgstr "Поддержка"
 
@@ -269,7 +269,11 @@ msgstr ""
 "Этот плагин позволяет легко добавлять кнопку «Scroll to Top» на ваш сайт в "
 "простой и элегантный способ."
 
-#: inc/php/settings.php:30 inc/php/settings.php:205
+#: inc/php/settings.php:24
+msgid "Version"
+msgstr ""
+
+#: inc/php/settings.php:31 inc/php/settings.php:212
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -279,115 +283,115 @@ msgstr ""
 "вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
 "создание программ для людей как вы."
 
-#: inc/php/settings.php:31 inc/php/settings.php:206
+#: inc/php/settings.php:32 inc/php/settings.php:213
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:207
+#: inc/php/settings.php:33 inc/php/settings.php:214
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/php/settings.php:37
+#: inc/php/settings.php:38
 msgid "Help"
 msgstr "Помощь"
 
-#: inc/php/settings.php:39
+#: inc/php/settings.php:40
 msgid "Got something to say? Need help?"
 msgstr "Есть что сказать? Нужна помощь?"
 
-#: inc/php/settings.php:62
+#: inc/php/settings.php:69
 msgid "Main Settings"
 msgstr "Основные Настройки"
 
-#: inc/php/settings.php:64
+#: inc/php/settings.php:71
 msgid "There you can configure this plugin."
 msgstr "Здесь вы можете настроить этот плагин."
 
-#: inc/php/settings.php:69
+#: inc/php/settings.php:76
 msgid "Enable \"Scroll to Top\" button"
 msgstr "Включить кнопку \"Scroll to Top\""
 
-#: inc/php/settings.php:76
+#: inc/php/settings.php:83
 msgid "Button background"
 msgstr "Фон кнопки"
 
-#: inc/php/settings.php:93
+#: inc/php/settings.php:100
 msgid "Without background"
 msgstr "Без фона"
 
-#: inc/php/settings.php:100
+#: inc/php/settings.php:107
 msgid "Button background color"
 msgstr "Цвет фона кнопки"
 
-#: inc/php/settings.php:107
+#: inc/php/settings.php:114
 msgid ""
 "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 "Выберите цвет фона кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/settings.php:111
+#: inc/php/settings.php:118
 msgid "Button symbol"
 msgstr "Символ кнопки"
 
-#: inc/php/settings.php:129
+#: inc/php/settings.php:136
 msgid "Button symbol color"
 msgstr "Цвет символа кнопки"
 
-#: inc/php/settings.php:136
+#: inc/php/settings.php:143
 msgid ""
 "Select the color of symbol inside button. You can also add html HEX color "
 "code."
 msgstr ""
 "Выберите цвет символа кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/settings.php:140
+#: inc/php/settings.php:147
 msgid "Button transparency"
 msgstr "Прозрачность кнопки"
 
-#: inc/php/settings.php:147
+#: inc/php/settings.php:154
 msgid "Button size"
 msgstr "Размер кнопки"
 
-#: inc/php/settings.php:148
+#: inc/php/settings.php:155
 msgid "You can set the size of button (in px). The default size is 32 pixels."
 msgstr ""
 
-#: inc/php/settings.php:156
+#: inc/php/settings.php:163
 msgid "Scroll duration"
 msgstr ""
 
-#: inc/php/settings.php:157
+#: inc/php/settings.php:164
 msgid ""
 "Duration is given in milliseconds. Higher values indicate slower animation "
 "(speed/smoothness), not faster ones. The default duration is 300 "
 "milliseconds."
 msgstr ""
 
-#: inc/php/settings.php:165
+#: inc/php/settings.php:172
 msgid "Display button on"
 msgstr "Отображать кнопку на"
 
-#: inc/php/settings.php:168
+#: inc/php/settings.php:175
 msgid "Full Website"
 msgstr "Весь Веб-сайт"
 
-#: inc/php/settings.php:169
+#: inc/php/settings.php:176
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/php/settings.php:175
+#: inc/php/settings.php:182
 msgid "Select where button need to be appeared."
 msgstr "Выберите, где кнопка должна показываться."
 
-#: inc/php/settings.php:180
+#: inc/php/settings.php:187
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/settings.php:186
+#: inc/php/settings.php:193
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/php/settings.php:188
+#: inc/php/settings.php:195
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
