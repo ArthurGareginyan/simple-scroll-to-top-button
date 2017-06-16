@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.3
+ * @since 4.4
  */
 ?>
     <!-- SIDEBAR -->
@@ -18,27 +18,25 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
         <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
             <div id="about" class="postbox">
-                <h3 class="title"><?php _e( 'About', SSTOPB_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', SSTOPB_TEXT ); ?></p>
-                    <p class="version"><?php _e( 'Version', SSTOPB_TEXT ); ?> <?php echo SSTOPB_VERSION; ?></p>
+                    <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', $text ); ?></p>
                 </div>
             </div>
 
             <div id="support" class="postbox">
-                <h3 class="title"><?php _e( 'Support', SSTOPB_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', SSTOPB_TEXT ); ?></p>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', SSTOPB_TEXT ); ?></a>
-                    <p><?php _e( 'Thanks for your support!', SSTOPB_TEXT ); ?></p>
+                    <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', $text ); ?></a>
+                    <p><?php _e( 'Thanks for your support!', $text ); ?></p>
                 </div>
             </div>
 
             <div id="help" class="postbox">
-                <h3 class="title"><?php _e( 'Help', SSTOPB_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'Help', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'Got something to say? Need help?', SSTOPB_TEXT ); ?></p>
-                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=<?php echo SSTOPB_NAME; ?>">arthurgareginyan@gmail.com</a></p>
+                    <p><?php _e( 'If you have a question, please read the information in the FAQ section.', $text ); ?></p>
                 </div>
             </div>
 
@@ -66,21 +64,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     ?>
 
                     <div class="postbox" id="Settings">
-                        <h3 class="title"><?php _e( 'Main Settings', SSTOPB_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'There you can configure this plugin.', SSTOPB_TEXT ); ?></p>
+                            <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
 
                             <table class="form-table">
 
                                 <?php ssttbutton_setting( 'enable_button',
-                                                          __( 'Enable "Scroll to Top" button', SSTOPB_TEXT ),
+                                                          __( 'Enable "Scroll to Top" button', $text ),
                                                           '',
                                                           'check'
                                                          );
                                 ?>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Button background', SSTOPB_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Button background', $text ); ?></th>
                                     <td>
                                         <ul>
                                             <li>
@@ -97,25 +95,25 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                             </li>
                                             <li>
                                                 <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked( ' ', $background_button ); ?> >
-                                                <?php _e( 'Without background', SSTOPB_TEXT ); ?>
+                                                <?php _e( 'Without background', $text ); ?>
                                             </li>
                                         </ul>
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Button background color', SSTOPB_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Button background color', $text ); ?></th>
                                     <td>
                                         <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#000000" class="color-picker">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select the background color of button. You can also add html HEX color code.', SSTOPB_TEXT ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select the background color of button. You can also add html HEX color code.', $text ); ?></td>
                                 </tr>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Button symbol', SSTOPB_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Button symbol', $text ); ?></th>
                                     <td>
                                         <ul>
                                             <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
@@ -133,26 +131,26 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 </tr>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Button symbol color', SSTOPB_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Button symbol color', $text ); ?></th>
                                     <td>
                                         <input type="text" name="ssttbutton_settings[symbol-color]" id="ssttbutton_settings[symbol-color]" value="<?php if ( !empty( $options['symbol-color'] ) ) { echo $options['symbol-color']; } else { echo '#ffffff'; }  ?>" placeholder="#ffffff" class="color-picker">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', SSTOPB_TEXT ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', $text ); ?></td>
                                 </tr>
 
                                 <?php ssttbutton_setting( 'transparency_button',
-                                                          __( 'Button transparency', SSTOPB_TEXT ),
+                                                          __( 'Button transparency', $text ),
                                                           '',
                                                           'check'
                                                         );
                                 ?>
 
                                 <?php ssttbutton_setting( 'size_button',
-                                                          __( 'Button size', SSTOPB_TEXT ),
-                                                          __( 'You can set the size of button (in px). The default size is 32 pixels.', SSTOPB_TEXT ),
+                                                          __( 'Button size', $text ),
+                                                          __( 'You can set the size of button (in px). The default size is 32 pixels.', $text ),
                                                           'field',
                                                           '32',
                                                           '2'
@@ -160,8 +158,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 ?>
 
                                 <?php ssttbutton_setting( 'scroll_duration',
-                                                          __( 'Scroll duration', SSTOPB_TEXT ),
-                                                          __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', SSTOPB_TEXT ),
+                                                          __( 'Scroll duration', $text ),
+                                                          __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $text ),
                                                           'field',
                                                           '300',
                                                           '5'
@@ -169,30 +167,30 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 ?>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Display button on', SSTOPB_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Display button on', $text ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', SSTOPB_TEXT ); ?><li>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', SSTOPB_TEXT ); ?></li>
+                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', $text ); ?><li>
+                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select where button need to be appeared.', SSTOPB_TEXT ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select where button need to be appeared.', $text ); ?></td>
                                 </tr>
 
                             </table>
 
-                            <?php submit_button( __( 'Save Changes', SSTOPB_TEXT ), 'primary', 'submit', true ); ?>
+                            <?php submit_button( __( 'Save changes', $text ), 'primary', 'submit', true ); ?>
 
                         </div>
                     </div>
 
                     <div class="postbox" id="Preview">
-                        <h3 class="title"><?php _e( 'Preview', SSTOPB_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Click the "Save Changes" button to update this preview.', SSTOPB_TEXT ); ?></p><br>
+                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p><br>
                             <div id="preview-icon">
                                 <a id="ssttbutton" href="#top">
                                     <span class="fa-stack fa-lg">
@@ -207,11 +205,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php ssttbutton_css_options(); ?>
 
                     <div class="postbox" id="support-addition">
-                        <h3 class="title"><?php _e( 'Support', SSTOPB_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', SSTOPB_TEXT ); ?></p>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', SSTOPB_TEXT ); ?></a>
-                            <p><?php _e( 'Thanks for your support!', SSTOPB_TEXT ); ?></p>
+                            <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', $text ); ?></a>
+                            <p><?php _e( 'Thanks for your support!', $text ); ?></p>
                         </div>
                     </div>
 

@@ -1,5 +1,5 @@
 /*
- * Plugin JavaScript and JQuery code for the front end of website
+ * Plugin JavaScript and jQuery code for the front end of website
  *
  * @package     Simple Scroll to Top Button
  * @uthor       Arthur Gareginyan
