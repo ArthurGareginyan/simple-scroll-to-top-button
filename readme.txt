@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 4.4
+Stable tag: 4.4.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Easily add cross browser "Scroll to Top" button to your website. It will be resp
 
 
 == Description ==
-An easy to use, with intuitive interface WordPress plugin that gives you the ability to add a "Scroll to Top" button to your website in a simple and elegant way. This button appears at the bottom-right of the website once the visitors scrolls down a page on your website. It appears only when visitors scroll down the webpage. As a result, your website visitors can easily scroll smoothly back to the very top of a page with one click of the button. This can be particularly handy for pages with a lot of text/content, or in cases wherever a browser's scrollbar is just not good enough (or not present at all, like on tablets) to enable one-click, one-screen scrolling. This gives your website better navigation and also adds a more professional look to your website.
+An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add a "Scroll to Top" button to your website in a simple and elegant way. This button appears at the bottom-right of the website once the visitors scrolls down a page on your website. It appears only when visitors scroll down the webpage. As a result, your website visitors can easily scroll smoothly back to the very top of a page with one click of the button. This can be particularly handy for pages with a lot of text/content, or in cases wherever a browser's scrollbar is just not good enough (or not present at all, like on tablets) to enable one-click, one-screen scrolling. This gives your website better navigation and also adds a more professional look to your website.
 
 This plugin give you finer control over "Scroll to Top" button, it can be configured on the plugin settings page. You can select where the button will be showed, such as home page or all pages. You can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. If you want more options then tell me and I will be happy to add it.
 
@@ -51,15 +51,13 @@ This plugin is ready for translation and has already been translated into severa
 * Russian
 * Spanish (translation by [Ramiro Garcés](http://www.ramirogarces.com.ve/))
 
-Maybe not all existed translations are up to date. You are welcome to contribute corrections!
-
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/simple-scroll-to-top-button).
 
 >**Contribution**
 >
 >Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 >
->* [Donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
 >* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/simple-scroll-to-top-button?rate=5#postform) this plugin.
 >* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/simple-scroll-to-top-button) if you have any ideas or suggestions to make this plugin better.
 
@@ -122,7 +120,7 @@ A. Please visit the [Dedicated Plugin Page on GitHub](https://github.com/ArthurG
 A. Any suggestions are very welcome! Please send me an email to [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com). Thank you!
 
 = Q. I love this plugin! Can I help somehow? =
-A. Yes, any financial contributions are welcome! Just visit [my website](http://www.arthurgareginyan.com/donate.html), click on the donate button, and thank you!
+A. Yes, any financial contributions are welcome! Just visit [my website](https://www.arthurgareginyan.com/donate.html), click on the donate button, and thank you!
 
 
 == Screenshots ==
@@ -134,7 +132,7 @@ A. Yes, any financial contributions are welcome! Just visit [my website](http://
 
 == Other Notes ==
 
-"Simple Scroll to Top Button" is one of the personal software projects of [Arthur Gareginyan](http://www.arthurgareginyan.com).
+"Simple Scroll to Top Button" is one of the personal software projects of [Arthur Gareginyan](https://www.arthurgareginyan.com).
 
 **License**
 
@@ -143,18 +141,22 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 **Credits**
 
-* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
-* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](https://www.arthurgareginyan.com). (C) All rights reserved.
+* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](https://www.arthurgareginyan.com). (C) All rights reserved.
 * [Bootstrap](http://getbootstrap.com) by Twitter, Inc. released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 * [Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
 
 **Links**
 
-* [Developer Website](http://www.arthurgareginyan.com)
+* [Developer Website](https://www.arthurgareginyan.com)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
 
 
 == Changelog ==
+
+= 4.4.1 =
+* The HTTPS mixed content issue fixed by changing all links to HTTPS.
+* Content of the "FAQ" section updated.
 
 = 4.4 =
 * On the plugin settings page, text of buttons are corrected.
