@@ -10,30 +10,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render checkboxes and fields for saving settings data to database
  *
- * @since 4.1
+ * @since 4.5
  */
 function ssttbutton_setting( $name, $label, $help=null, $field=null, $placeholder=null, $size=null ) {
 
-    // Read options from BD
+    // Read options from database and declare variables
     $options = get_option( SSTOPB_SETTINGS . '_settings' );
-
-    if ( !empty( $options[$name] ) ) {
-        $value = esc_textarea( $options[$name] );
-    } else {
-        $value = "";
-    }
+    $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
     // Generate the table
-    if ( !empty( $options[$name] ) ) {
-        $checked = "checked='checked'";
-    } else {
-        $checked = "";
-    }
+    $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
 
     if ( $field == "check" ) {
-        $input = "<input type='checkbox' name='" . SSTOPB_SETTINGS . "_settings[$name]' id='" . SSTOPB_SETTINGS . "_settings[$name]' $checked >";
+        $input = "<input type='checkbox' name='" . SSTOPB_SETTINGS . "_settings[$name]' id='" . SSTOPB_SETTINGS . "_settings[$name]' $checked class='$name' >";
     } elseif ( $field == "field" ) {
-        $input = "<input type='text' name='" . SSTOPB_SETTINGS . "_settings[$name]' id='" . SSTOPB_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' >";
+        $input = "<input type='text' name='" . SSTOPB_SETTINGS . "_settings[$name]' id='" . SSTOPB_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' class='$name' >";
     }
 
     // Put table to the variables $out and $help_out
@@ -61,66 +52,13 @@ function ssttbutton_setting( $name, $label, $help=null, $field=null, $placeholde
 }
 
 /**
- * Generate the CSS of button from options and add it to head section of website
- *
- * @since 4.1
- */
-function ssttbutton_css_options() {
-
-    // Read options from BD and declare variables
-    $options = get_option( SSTOPB_SETTINGS . '_settings' );
-
-    if ( !empty( $options['background-color'] ) ) {
-        $backgroun_color = $options['background-color'];
-    } else {
-        $backgroun_color = "#000000";
-    }
-
-    if ( !empty( $options['symbol-color'] ) ) {
-        $symbol_color = $options['symbol-color'];
-    } else {
-        $symbol_color = "#ffffff";
-    }
-
-    if ( !empty( $options['size_button'] ) ) {
-        $size_button = $options['size_button'];
-    } else {
-        $size_button = "32";
-    }
-
-    ?>
-        <style type="text/css">
-            #ssttbutton {
-                <?php if ( !empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on' ) {
-                    echo '
-                        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-                        filter: alpha(opacity=50);
-                        -moz-opacity: .5;
-                        -khtml-opacity: .5;
-                        opacity: .5;
-                    ';
-                } ?>
-                font-size: <?php echo $size_button; ?>px;
-            }
-            .ssttbutton-background {
-                color: <?php echo $backgroun_color; ?>;
-            }
-            .ssttbutton-symbol {
-                color: <?php echo $symbol_color; ?>;
-            }
-        </style>
-    <?php
-}
-add_action( 'wp_head' , SSTOPB_PREFIX . '_css_options' );
-
-/**
  * Add DIV container with button to footer.
  *
- * @since 4.1
+ * @since 4.5
  */
 function ssttbutton_add_container() {
 
-    // Read options from BD and declare variables
+    // Read options from database
     $options = get_option( SSTOPB_SETTINGS . '_settings' );
 
     // Return if the button is disabled
@@ -128,11 +66,16 @@ function ssttbutton_add_container() {
         return;
     }
 
+    // Declare variables
+    $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
+    $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
+    $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
+
     ?>
-        <a id="ssttbutton" href="#top">
+        <a id="ssttbutton" href="#top" class="<?php echo $transparency; ?>">
             <span class="fa-stack fa-lg">
-                <i class="ssttbutton-background fa <?php if ( !empty( $options['background_button'] ) ) { echo $options['background_button']; } else { echo 'fa-circle'; }  ?> fa-stack-2x"></i>
-                <i class="ssttbutton-symbol fa <?php if ( !empty( $options['image_button'] ) ) { echo $options['image_button']; } else { echo 'fa-hand-o-up'; }  ?> fa-stack-1x"></i>
+                <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>
+                <i class="ssttbutton-symbol fa <?php echo $image_button; ?> fa-stack-1x"></i>
             </span>
         </a>
     <?php

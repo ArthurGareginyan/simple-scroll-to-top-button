@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.1
+ * @since       4.5
  */
 
 
@@ -19,18 +19,18 @@ jQuery(document).ready(function($) {
     // Hide button by default
     $('#ssttbutton').hide();
 
-	$(window).scroll(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() < 200) {
-			$('#ssttbutton') .fadeOut();
+            $('#ssttbutton') .fadeOut();
         } else {
-			$('#ssttbutton') .fadeIn();
+    		$('#ssttbutton') .fadeIn();
         }
     });
 
     // Click on button
-	$('#ssttbutton').on('click', function() {
-		$('html, body').animate({scrollTop:0}, duration);
-		return false;
+  	$('#ssttbutton').on('click', function() {
+        $('html, body').animate({scrollTop:0}, duration);
+        return false;
     });
 
 });

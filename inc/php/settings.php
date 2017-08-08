@@ -10,21 +10,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.4
+ * @since 4.5
  */
 ?>
     <!-- SIDEBAR -->
     <div class="inner-sidebar">
         <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
-            <div id="about" class="postbox">
+            <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', $text ); ?></p>
                 </div>
             </div>
 
-            <div id="support" class="postbox">
+            <div class="postbox support">
                 <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
@@ -33,12 +33,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 </div>
             </div>
 
-            <div id="help" class="postbox">
+            <div class="postbox help">
                 <h3 class="title"><?php _e( 'Help', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'If you have a question, please read the information in the FAQ section.', $text ); ?></p>
                 </div>
             </div>
+
+            <div class="include-banner"></div>
 
         </div>
     </div>
@@ -57,13 +59,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $options = get_option( SSTOPB_SETTINGS . '_settings' );
 
                         // Set default value if option is empty
+                        $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
                         $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
                         $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#000000';
                         $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
                         $display_button = !empty( $options['display-button'] ) ? $options['display-button'] : '';
                     ?>
 
-                    <div class="postbox" id="Settings">
+                    <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
@@ -80,7 +83,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <tr>
                                     <th scope='row'><?php _e( 'Button background', $text ); ?></th>
                                     <td>
-                                        <ul>
+                                        <ul class='background-button'>
                                             <li>
                                                 <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked( 'fa-square', $background_button ); ?> >
                                                 <i class="fa fa-square fa-2x"></i>
@@ -104,7 +107,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <tr>
                                     <th scope='row'><?php _e( 'Button background color', $text ); ?></th>
                                     <td>
-                                        <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#000000" class="color-picker">
+                                        <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#000000" class="color-picker background-color">
                                     </td>
                                 </tr>
                                 <tr>
@@ -115,7 +118,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <tr>
                                     <th scope='row'><?php _e( 'Button symbol', $text ); ?></th>
                                     <td>
-                                        <ul>
+                                        <ul class='image-button'>
                                             <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
                                             <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $image_button); ?> ><i class="fa fa-level-up fa-2x"></i></li>
                                             <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $image_button); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
@@ -133,7 +136,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <tr>
                                     <th scope='row'><?php _e( 'Button symbol color', $text ); ?></th>
                                     <td>
-                                        <input type="text" name="ssttbutton_settings[symbol-color]" id="ssttbutton_settings[symbol-color]" value="<?php if ( !empty( $options['symbol-color'] ) ) { echo $options['symbol-color']; } else { echo '#ffffff'; }  ?>" placeholder="#ffffff" class="color-picker">
+                                        <input type="text" name="ssttbutton_settings[symbol-color]" id="ssttbutton_settings[symbol-color]" value="<?php if ( !empty( $options['symbol-color'] ) ) { echo $options['symbol-color']; } else { echo '#ffffff'; }  ?>" placeholder="#ffffff" class="color-picker symbol-color">
                                     </td>
                                 </tr>
                                 <tr>
@@ -187,22 +190,17 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
-                    <div class="postbox" id="Preview">
-                        <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
+                    <div class="postbox" id="preview">
+                        <h3 class="title"><?php _e( 'Live Preview', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p><br>
-                            <div id="preview-icon">
-                                <a id="ssttbutton" href="#top">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>
-                                        <i class="ssttbutton-symbol fa <?php echo $image_button; ?> fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </div>
+                            <a id="ssttbutton" href="#top" class="<?php echo $transparency; ?>">
+                                <span class="fa-stack fa-lg">
+                                    <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>
+                                    <i class="ssttbutton-symbol fa <?php echo $image_button; ?> fa-stack-1x"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
-
-                    <?php ssttbutton_css_options(); ?>
 
                     <div class="postbox" id="support-addition">
                         <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
