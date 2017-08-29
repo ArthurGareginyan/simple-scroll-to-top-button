@@ -2,10 +2,9 @@
  * Plugin JavaScript and jQuery code for the admin pages of website
  *
  * @package     Simple Scroll to Top Button
- * @uthor       Arthur Gareginyan
+ * @author      Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.6
  */
 
 
@@ -13,18 +12,12 @@ jQuery(document).ready(function($) {
 
     "use strict";
 
-    // Color picker
-    $('.color-picker').wpColorPicker();
-
     // Remove the 'successful' message after 3 seconds
     if ('.updated') {
         setTimeout(function() {
             $('.updated').fadeOut();
         }, 3000);
     }
-
-    // Enable Bootstrap Checkboxes
-    $(':checkbox').checkboxpicker();
 
     // Add dynamic content to page tabs. Needed for having an up to date content.
     $('.include-tab-author').load('https://www.spacexchimp.com/assets/dynamic-content/plugins.html #include-tab-author');
@@ -42,13 +35,32 @@ jQuery(document).ready(function($) {
          }
     });
 
+    // Enable color picker
+    $('.control-color').wpColorPicker();
+
+    // Enable switches
+    $('.control-switch').checkboxpicker();
+
+    // Enable number fields
+    $('.control-number .btn-danger').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value - 1);
+        input.change();
+    });
+    $('.control-number .btn-success').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value + 1);
+        input.change();
+    });
+
     // Live preview
     $('.background-button').on('change', function() {
         var val = $('input[type=radio]:checked', '.background-button').val() || 'fa-circle';
         val = 'ssttbutton-background fa ' + val + ' fa-stack-2x';
         $('#preview .ssttbutton-background').attr('class', val);
     });
-
     $('.background-color').wpColorPicker({
         change: function (event, ui) {
             var element = event.target;
@@ -63,13 +75,11 @@ jQuery(document).ready(function($) {
             }
         }
     });
-
     $('.image-button').on('change', function() {
         var val = $('input[type=radio]:checked', '.image-button').val() || 'fa-hand-o-up';
         val = 'ssttbutton-symbol fa ' + val + ' fa-stack-1x';
         $('#preview .ssttbutton-symbol').attr('class', val);
     });
-
     $('.symbol-color').wpColorPicker({
         change: function (event, ui) {
             var element = event.target;
@@ -84,7 +94,6 @@ jQuery(document).ready(function($) {
             }
         }
     });
-
     $('.transparency_button').on('change', function() {
         var val = $(this).val();
         var position = $(this).next().children().hasClass('btn-success');
@@ -94,8 +103,7 @@ jQuery(document).ready(function($) {
             $('#preview #ssttbutton').removeClass('ssttbutton-transparent');
         }
     });
-
-    $('.size_button').change(function() {
+    $('.size_button input').change(function() {
         var val = $(this).val() || '32';
         //$('#preview #ssttbutton').css('font-size',val);
         $('#preview #ssttbutton').attr('style', 'font-size:' + val + 'px !important;');

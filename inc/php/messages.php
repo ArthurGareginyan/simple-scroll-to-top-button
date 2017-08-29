@@ -2,19 +2,15 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Hello message - Bootstrap Modal
- *
- * @since 4.6
  */
-function ssttbutton_hello_message() {
+function spacexchimp_p008_hello_message() {
 
-    $options = get_option( SSTOPB_SETTINGS . '_settings' );
+    $options = get_option( SPACEXCHIMP_P008_SETTINGS . '_settings' );
 
     if ( !empty( $options ) ) {
         return;
@@ -25,11 +21,11 @@ function ssttbutton_hello_message() {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="<?php echo SSTOPB_URL . 'inc/img/avatar.png'; ?>">
+                        <img src="<?php echo SPACEXCHIMP_P008_URL . 'inc/img/avatar.png'; ?>">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <p><?php _e( 'Hello. I\'m Arthur, the author of this plugin.', SSTOPB_TEXT ); ?></p>
+                        <p><?php _e( 'Hello. I\'m Arthur, the author of this plugin.', SPACEXCHIMP_P008_TEXT ); ?></p>
                         <p><?php printf(
-                                        __( 'Thank you for installing my plugin! I hope you will love it! %s', SSTOPB_TEXT ),
+                                        __( 'Thank you for installing my plugin! I hope you will love it! %s', SPACEXCHIMP_P008_TEXT ),
                                         '&#x1F603;'
                                         );
                             ?></p>
@@ -47,12 +43,10 @@ function ssttbutton_hello_message() {
 
 /**
  * Error message (When the old version of plugin installed) - Bootstrap Modal
- *
- * @since 4.2
  */
-function ssttbutton_error_message() {
+function spacexchimp_p008_error_message() {
 
-    $info = get_option( SSTOPB_SETTINGS . '_service_info' );
+    $info = get_option( SPACEXCHIMP_P008_SETTINGS . '_service_info' );
     $old_version = !empty( $info['old_version'] ) ? $info['old_version'] : '0';
 
     if ( $old_version != '1' ) {
@@ -64,8 +58,8 @@ function ssttbutton_error_message() {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <p><?php _e( 'You have installed an old version of this plugin.', SSTOPB_TEXT ); ?></p>
-                        <p><?php _e( 'Please update the plugin to the latest version, and all will be fine.', SSTOPB_TEXT ); ?></p>
+                        <p><?php _e( 'You have installed an old version of this plugin.', SPACEXCHIMP_P008_TEXT ); ?></p>
+                        <p><?php _e( 'Please update the plugin to the latest version, and all will be fine.', SPACEXCHIMP_P008_TEXT ); ?></p>
                     </div>
                 </div>
             </div>

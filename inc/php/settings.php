@@ -2,15 +2,11 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Tab Content
- *
- * @since 4.6
  */
 ?>
     <div class="has-sidebar sm-padded">
@@ -18,11 +14,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="meta-box-sortabless">
 
                 <form action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( SSTOPB_SETTINGS . '_settings_group' ); ?>
+                    <?php settings_fields( SPACEXCHIMP_P008_SETTINGS . '_settings_group' ); ?>
 
                     <?php
                         // Get options from the database
-                        $options = get_option( SSTOPB_SETTINGS . '_settings' );
+                        $options = get_option( SPACEXCHIMP_P008_SETTINGS . '_settings' );
 
                         // Set default value if option is empty
                         $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
@@ -32,18 +28,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $display_button = !empty( $options['display-button'] ) ? $options['display-button'] : '';
                     ?>
 
+                    <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
+                        <i class="fa fa-save" aria-hidden="true"></i>
+                        <span><?php _e( 'Save changes', $text ); ?></span>
+                    </button>
+
                     <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
-
                             <table class="form-table">
-
-                                <?php ssttbutton_setting( 'enable_button',
-                                                          __( 'Enable "Scroll to Top" button', $text ),
-                                                          '',
-                                                          'check'
-                                                         );
+                                <?php
+                                    spacexchimp_p008_control_switch( 'enable_button',
+                                                                     __( 'Enable "Scroll to Top" button', $text ),
+                                                                     __( 'Enable or disable this plugin.', $text )
+                                                                   );
                                 ?>
 
                                 <tr>
@@ -69,17 +68,18 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                         </ul>
                                     </td>
                                 </tr>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button background color', $text ); ?></th>
-                                    <td>
-                                        <input type="text" name="ssttbutton_settings[background-color]" id="ssttbutton_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#000000" class="color-picker background-color">
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select the background color of button. You can also add html HEX color code.', $text ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select the background of the button by choosing one of the four variants above.', $text ); ?></td>
                                 </tr>
+
+                                <?php
+                                    spacexchimp_p008_control_color( 'background-color',
+                                                                    __( 'Button background color', $text ),
+                                                                    __( 'Select the background color of button. You can also add html HEX color code.', $text ),
+                                                                    '#ffffff'
+                                                                  );
+                                ?>
 
                                 <tr>
                                     <th scope='row'><?php _e( 'Button symbol', $text ); ?></th>
@@ -98,41 +98,31 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                         </ul>
                                     </td>
                                 </tr>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button symbol color', $text ); ?></th>
-                                    <td>
-                                        <input type="text" name="ssttbutton_settings[symbol-color]" id="ssttbutton_settings[symbol-color]" value="<?php if ( !empty( $options['symbol-color'] ) ) { echo $options['symbol-color']; } else { echo '#ffffff'; }  ?>" placeholder="#ffffff" class="color-picker symbol-color">
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select the color of symbol inside button. You can also add html HEX color code.', $text ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select the symbol of the button by choosing one of the ten variants above.', $text ); ?></td>
                                 </tr>
 
-                                <?php ssttbutton_setting( 'transparency_button',
-                                                          __( 'Button transparency', $text ),
-                                                          '',
-                                                          'check'
-                                                        );
-                                ?>
-
-                                <?php ssttbutton_setting( 'size_button',
-                                                          __( 'Button size', $text ),
-                                                          __( 'You can set the size of button (in px). The default size is 32 pixels.', $text ),
-                                                          'field',
-                                                          '32',
-                                                          '2'
-                                                         );
-                                ?>
-
-                                <?php ssttbutton_setting( 'scroll_duration',
-                                                          __( 'Scroll duration', $text ),
-                                                          __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $text ),
-                                                          'field',
-                                                          '300',
-                                                          '5'
-                                                         );
+                                <?php
+                                    spacexchimp_p008_control_color( 'symbol-color',
+                                                                    __( 'Button symbol color', $text ),
+                                                                    __( 'Select the color of symbol inside button. You can also add html HEX color code.', $text ),
+                                                                    '#ffffff'
+                                                                  );
+                                    spacexchimp_p008_control_switch( 'transparency_button',
+                                                                     __( 'Transparency', $text ),
+                                                                     __( 'Enable the transparency of the button.', $text )
+                                                                   );
+                                    spacexchimp_p008_control_number( 'size_button',
+                                                                     __( 'Button size', $text ),
+                                                                     __( 'You can set the size of button (in pixels). The default size is 32 pixels.', $text ),
+                                                                     '32'
+                                                                   );
+                                    spacexchimp_p008_control_number( 'scroll_duration',
+                                                                     __( 'Scroll duration', $text ),
+                                                                     __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $text ),
+                                                                     '300'
+                                                                   );
                                 ?>
 
                                 <tr>
@@ -150,11 +140,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 </tr>
 
                             </table>
-
-                            <?php submit_button( __( 'Save changes', $text ), 'primary', 'submit', true ); ?>
-
                         </div>
                     </div>
+
+                    <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $text ); ?>">
 
                     <div class="postbox" id="preview">
                         <h3 class="title"><?php _e( 'Live Preview', $text ); ?></h3>
@@ -172,9 +161,9 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                         <div class="inside">
                             <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default btn-labeled">
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default button-labeled">
                                                         <span class="btn-label">
-                                                            <img src="<?php echo SSTOPB_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
+                                                            <img src="<?php echo SPACEXCHIMP_P008_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
                                                         </span>
                                                         <?php _e( 'Donate with PayPal', $text ); ?>
                                                 </a>

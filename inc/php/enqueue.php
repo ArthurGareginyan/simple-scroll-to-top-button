@@ -2,28 +2,21 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Base for the _load_scripts hook
- *
- * @since 4.5
  */
-function ssttbutton_load_scripts_base( $options ) {
+function spacexchimp_p008_load_scripts_base( $options ) {
 
     // Put value of constants to variables for easier access
-    $slug = SSTOPB_SLUG;
-    $prefix = SSTOPB_PREFIX;
-    $url = SSTOPB_URL;
+    $slug = SPACEXCHIMP_P008_SLUG;
+    $prefix = SPACEXCHIMP_P008_PREFIX;
+    $url = SPACEXCHIMP_P008_URL;
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
-
-    // Other libraries
-    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.min.css', 'screen' );
 
     // Style sheet
     wp_enqueue_style( $prefix . '-frontend-css', $url . 'inc/css/frontend.css' );
@@ -59,16 +52,14 @@ function ssttbutton_load_scripts_base( $options ) {
 
 /**
  * Load scripts and style sheet for settings page
- *
- * @since 4.5
  */
-function ssttbutton_load_scripts_admin( $hook ) {
+function spacexchimp_p008_load_scripts_admin( $hook ) {
 
     // Put value of constants to variables for easier access
-    $slug = SSTOPB_SLUG;
-    $prefix = SSTOPB_PREFIX;
-    $url = SSTOPB_URL;
-    $settings = SSTOPB_SETTINGS;
+    $slug = SPACEXCHIMP_P008_SLUG;
+    $prefix = SPACEXCHIMP_P008_PREFIX;
+    $url = SPACEXCHIMP_P008_URL;
+    $settings = SPACEXCHIMP_P008_SETTINGS;
 
     // Return if the page is not a settings page of this plugin
     $settings_page = 'settings_page_' . $slug;
@@ -87,8 +78,10 @@ function ssttbutton_load_scripts_admin( $hook ) {
     wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css' );
     wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js' );
 
+    // Font Awesome library
+    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.css', 'screen' );
+
     // Other libraries
-    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.min.css', 'screen' );
     wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
 
     // Style sheet
@@ -98,23 +91,21 @@ function ssttbutton_load_scripts_admin( $hook ) {
     wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array('wp-color-picker'), false, true );
 
     // Call the function that contain a basis of scripts
-    ssttbutton_load_scripts_base( $options );
+    spacexchimp_p008_load_scripts_base( $options );
 
 }
-add_action( 'admin_enqueue_scripts', SSTOPB_PREFIX . '_load_scripts_admin' );
+add_action( 'admin_enqueue_scripts', 'spacexchimp_p008_load_scripts_admin' );
 
 /**
  * Load scripts and style sheet for front end of website
- *
- * @since 4.4
  */
-function ssttbutton_load_scripts_frontend() {
+function spacexchimp_p008_load_scripts_frontend() {
 
     // Put value of constants to variables for easier access
-    $slug = SSTOPB_SLUG;
-    $prefix = SSTOPB_PREFIX;
-    $url = SSTOPB_URL;
-    $settings = SSTOPB_SETTINGS;
+    $slug = SPACEXCHIMP_P008_SLUG;
+    $prefix = SPACEXCHIMP_P008_PREFIX;
+    $url = SPACEXCHIMP_P008_URL;
+    $settings = SPACEXCHIMP_P008_SETTINGS;
 
     // Read options from database and declare variables
     $options = get_option( $settings . '_settings' );
@@ -129,9 +120,12 @@ function ssttbutton_load_scripts_frontend() {
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
 
         // Call the function that contain a basis of scripts
-        ssttbutton_load_scripts_base( $options );
+        spacexchimp_p008_load_scripts_base( $options );
+
+        // Font Awesome library
+        wp_enqueue_style( $prefix . '-font-awesome-css-frontend', $url . 'inc/lib/font-awesome/css/font-awesome.css', 'screen' );
 
     }
 
 }
-add_action( 'wp_enqueue_scripts', SSTOPB_PREFIX . '_load_scripts_frontend' );
+add_action( 'wp_enqueue_scripts', 'spacexchimp_p008_load_scripts_frontend' );
