@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
     "use strict";
 
     // Set variables
-    var duration = parseInt( ssttbutton_scriptParams["scroll_duration"] );
+    var duration = parseInt( spacexchimp_p008_scriptParams["scroll_duration"] );
 
     // Hide button by default
     $('#ssttbutton').hide();

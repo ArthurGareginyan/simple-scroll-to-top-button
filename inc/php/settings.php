@@ -50,19 +50,19 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <td>
                                         <ul class='background-button'>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square" <?php checked( 'fa-square', $background_button ); ?> >
+                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-square" <?php checked( 'fa-square', $background_button ); ?> >
                                                 <i class="fa fa-square fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-square-o" <?php checked( 'fa-square-o', $background_button ); ?> >
+                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-square-o" <?php checked( 'fa-square-o', $background_button ); ?> >
                                                 <i class="fa fa-square-o fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value="fa-circle" <?php checked( '', $background_button ); ?> <?php checked( 'fa-circle', $background_button ); ?> >
+                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-circle" <?php checked( '', $background_button ); ?> <?php checked( 'fa-circle', $background_button ); ?> >
                                                 <i class="fa fa-circle fa-2x"></i>
                                             </li>
                                             <li>
-                                                <input type="radio" name="ssttbutton_settings[background_button]" value=" " <?php checked( ' ', $background_button ); ?> >
+                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value=" " <?php checked( ' ', $background_button ); ?> >
                                                 <?php _e( 'Without background', $text ); ?>
                                             </li>
                                         </ul>
@@ -85,16 +85,16 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <th scope='row'><?php _e( 'Button symbol', $text ); ?></th>
                                     <td>
                                         <ul class='image-button'>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $image_button); ?> ><i class="fa fa-level-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $image_button); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-hand-o-up" <?php checked('', $image_button); ?> <?php checked('fa-hand-o-up', $image_button); ?> ><i class="fa fa-hand-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-square-o-up" <?php checked('fa-caret-square-o-up', $image_button); ?> ><i class="fa fa-caret-square-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-long-arrow-up" <?php checked('fa-long-arrow-up', $image_button); ?> ><i class="fa fa-long-arrow-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-chevron-up" <?php checked('fa-chevron-up', $image_button); ?> ><i class="fa fa-chevron-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-up" <?php checked('fa-angle-up', $image_button); ?> ><i class="fa fa-angle-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-caret-up" <?php checked('fa-caret-up', $image_button); ?> ><i class="fa fa-caret-up fa-2x"></i></li>
-                                            <li><input type="radio" name="ssttbutton_settings[image_button]" value="fa-angle-double-up" <?php checked('fa-angle-double-up', $image_button); ?> ><i class="fa fa-angle-double-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $image_button); ?> ><i class="fa fa-level-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $image_button); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-hand-o-up" <?php checked('', $image_button); ?> <?php checked('fa-hand-o-up', $image_button); ?> ><i class="fa fa-hand-o-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-caret-square-o-up" <?php checked('fa-caret-square-o-up', $image_button); ?> ><i class="fa fa-caret-square-o-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-long-arrow-up" <?php checked('fa-long-arrow-up', $image_button); ?> ><i class="fa fa-long-arrow-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-chevron-up" <?php checked('fa-chevron-up', $image_button); ?> ><i class="fa fa-chevron-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-angle-up" <?php checked('fa-angle-up', $image_button); ?> ><i class="fa fa-angle-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-caret-up" <?php checked('fa-caret-up', $image_button); ?> ><i class="fa fa-caret-up fa-2x"></i></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-angle-double-up" <?php checked('fa-angle-double-up', $image_button); ?> ><i class="fa fa-angle-double-up fa-2x"></i></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -129,8 +129,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <th scope='row'><?php _e( 'Display button on', $text ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', $text ); ?><li>
-                                            <li><input type="radio" name="ssttbutton_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', $text ); ?><li>
+                                            <li><input type="radio" name="spacexchimp_p008_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
                                         </ul>
                                     </td>
                                 </tr>

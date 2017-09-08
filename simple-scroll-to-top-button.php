@@ -5,7 +5,7 @@
  * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 4.7
+ * Version: 4.8
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
@@ -51,13 +51,13 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Define global constants
  */
- $plugin_data = get_file_data( __FILE__,
-                               array(
-                                      'name'    => 'Plugin Name',
-                                      'version' => 'Version',
-                                      'text'    => 'Text Domain'
-                                    )
-                             );
+$plugin_data = get_file_data( __FILE__,
+                              array(
+                                     'name'    => 'Plugin Name',
+                                     'version' => 'Version',
+                                     'text'    => 'Text Domain'
+                                   )
+                            );
 function spacexchimp_p008_define_constants( $constant_name, $value ) {
     $constant_name = 'SPACEXCHIMP_P008_' . $constant_name;
     if ( !defined( $constant_name ) )
@@ -71,8 +71,8 @@ spacexchimp_p008_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) 
 spacexchimp_p008_define_constants( 'NAME', $plugin_data['name'] );
 spacexchimp_p008_define_constants( 'VERSION', $plugin_data['version'] );
 spacexchimp_p008_define_constants( 'TEXT', $plugin_data['text'] );
-spacexchimp_p008_define_constants( 'PREFIX', 'ssttbutton' );
-spacexchimp_p008_define_constants( 'SETTINGS', 'ssttbutton' );
+spacexchimp_p008_define_constants( 'PREFIX', 'spacexchimp_p008' );
+spacexchimp_p008_define_constants( 'SETTINGS', 'spacexchimp_p008' );
 
 /**
  * Load the plugin modules
