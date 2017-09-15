@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 4.8
+Stable tag: 4.9
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -82,7 +82,7 @@ Manually via FTP access:
 4. Log into Admin Panel of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
-After installation and activation, the "`Scroll to Top`" menu item will appear in the "`Settings`" section of Admin Panel. Click on it in order to view the plugin settings page.
+After installation and activation, the "`Scroll to Top`" menu item will appear in the "`Space X-Chimp`" section of Admin Panel. Click on it in order to view the plugin settings page.
 
 [More help installing plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
@@ -97,7 +97,7 @@ A. Yes. This plugin is ready for translation and has already been translated int
 
 = Q. How does it work? =
 A. Simply go to the plugin settings page, select the desired settings and click the "Save changes" button. Enjoy your fancy "Scroll to Top" button. It's that simple!
-You can find the plugin settings page at "`WP Admin Panel`" -> "`Settings`" -> "`Scroll to Top`".
+You can find the plugin settings page at "`WP Admin Panel`" -> "`Space X-Chimp`" -> "`Scroll to Top`".
 
 = Q. Is it possible to use different buttons/arrows? =
 A. This plugin comes with the FontAwesome iconic font. Now you can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. A future version may include more buttons, and/or the option to upload your own button graphics.
@@ -159,6 +159,16 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.9 =
+* Added the top level menu item of the brand.
+* The submenu item of the plugin has moved to the menu item of the brand.
+* The menu item of the plugin is renamed.
+* The "Author" tab on the settings page is removed.
+* Content of the "Support" tab on the settings page is updated.
+* Copyright of plugin files is changed to the "Space X-Chimp Studio".
+* The "Support" tab renamed to the "Support Me".
+* The "Usage" tab renamed to the "Usage Instructions".
 
 = 4.8 =
 * Plugin data that saved in the database upgraded to version 0001.
