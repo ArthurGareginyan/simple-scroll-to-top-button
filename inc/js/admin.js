@@ -55,8 +55,8 @@ jQuery(document).ready(function($) {
     });
 
     // Live preview
-    $('.background-button').on('change', function() {
-        var val = $('input[type=radio]:checked', '.background-button').val() || 'fa-circle';
+    $('.background_button').on('change', function() {
+        var val = $('input[type=radio]:checked', '.background_button').val() || 'fa-circle';
         val = 'ssttbutton-background fa ' + val + ' fa-stack-2x';
         $('#preview .ssttbutton-background').attr('class', val);
     });
@@ -74,8 +74,8 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    $('.image-button').on('change', function() {
-        var val = $('input[type=radio]:checked', '.image-button').val() || 'fa-hand-o-up';
+    $('.image_button').on('change', function() {
+        var val = $('input[type=radio]:checked', '.image_button').val() || 'fa-hand-o-up';
         val = 'ssttbutton-symbol fa ' + val + ' fa-stack-1x';
         $('#preview .ssttbutton-symbol').attr('class', val);
     });

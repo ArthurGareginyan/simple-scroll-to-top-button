@@ -25,7 +25,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
                         $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#000000';
                         $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
-                        $display_button = !empty( $options['display-button'] ) ? $options['display-button'] : '';
                     ?>
 
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
@@ -43,67 +42,39 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      __( 'Enable "Scroll to Top" button', $text ),
                                                                      __( 'Enable or disable this plugin.', $text )
                                                                    );
-                                ?>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button background', $text ); ?></th>
-                                    <td>
-                                        <ul class='background-button'>
-                                            <li>
-                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-square" <?php checked( 'fa-square', $background_button ); ?> >
-                                                <i class="fa fa-square fa-2x"></i>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-square-o" <?php checked( 'fa-square-o', $background_button ); ?> >
-                                                <i class="fa fa-square-o fa-2x"></i>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value="fa-circle" <?php checked( '', $background_button ); ?> <?php checked( 'fa-circle', $background_button ); ?> >
-                                                <i class="fa fa-circle fa-2x"></i>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="spacexchimp_p008_settings[background_button]" value=" " <?php checked( ' ', $background_button ); ?> >
-                                                <?php _e( 'Without background', $text ); ?>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'Select the background of the button by choosing one of the four variants above.', $text ); ?></td>
-                                </tr>
-
-                                <?php
+                                    spacexchimp_p008_control_choice( 'background_button',
+                                                                     array(
+                                                                            'fa-square'                 => '<i class="fa fa-square fa-2x"></i>',
+                                                                            'fa-square-o'               => '<i class="fa fa-square-o fa-2x"></i>',
+                                                                            'fa-circle'                 => '<i class="fa fa-circle fa-2x"></i>',
+                                                                            ' '                         => __( 'Without background', $text )
+                                                                          ),
+                                                                     __( 'Button background', $text ),
+                                                                     __( 'Select the background of the button by choosing one of the four variants above.', $text ),
+                                                                     'fa-circle'
+                                                                   );
                                     spacexchimp_p008_control_color( 'background-color',
                                                                     __( 'Button background color', $text ),
                                                                     __( 'Select the background color of button. You can also add html HEX color code.', $text ),
                                                                     '#ffffff'
                                                                   );
-                                ?>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Button symbol', $text ); ?></th>
-                                    <td>
-                                        <ul class='image-button'>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-arrow-up" <?php checked('fa-arrow-up', $image_button); ?> ><i class="fa fa-arrow-up fa-lg"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-level-up" <?php checked('fa-level-up', $image_button); ?> ><i class="fa fa-level-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-reply fa-rotate-90" <?php checked('fa-reply fa-rotate-90', $image_button); ?> ><i class="fa fa-reply fa-rotate-90 fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-hand-o-up" <?php checked('', $image_button); ?> <?php checked('fa-hand-o-up', $image_button); ?> ><i class="fa fa-hand-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-caret-square-o-up" <?php checked('fa-caret-square-o-up', $image_button); ?> ><i class="fa fa-caret-square-o-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-long-arrow-up" <?php checked('fa-long-arrow-up', $image_button); ?> ><i class="fa fa-long-arrow-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-chevron-up" <?php checked('fa-chevron-up', $image_button); ?> ><i class="fa fa-chevron-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-angle-up" <?php checked('fa-angle-up', $image_button); ?> ><i class="fa fa-angle-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-caret-up" <?php checked('fa-caret-up', $image_button); ?> ><i class="fa fa-caret-up fa-2x"></i></li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[image_button]" value="fa-angle-double-up" <?php checked('fa-angle-double-up', $image_button); ?> ><i class="fa fa-angle-double-up fa-2x"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'Select the symbol of the button by choosing one of the ten variants above.', $text ); ?></td>
-                                </tr>
-
-                                <?php
+                                    spacexchimp_p008_control_choice( 'image_button',
+                                                                     array(
+                                                                            'fa-arrow-up'               => '<i class="fa fa-arrow-up fa-lg"></i>',
+                                                                            'fa-level-up'               => '<i class="fa fa-level-up fa-2x"></i>',
+                                                                            'fa-reply fa-rotate-90'     => '<i class="fa fa-reply fa-rotate-90 fa-2x"></i>',
+                                                                            'fa-hand-o-up'              => '<i class="fa fa-hand-o-up fa-2x"></i>',
+                                                                            'fa-caret-square-o-up'      => '<i class="fa fa-caret-square-o-up fa-2x"></i>',
+                                                                            'fa-long-arrow-up'          => '<i class="fa fa-long-arrow-up fa-2x"></i>',
+                                                                            'fa-chevron-up'             => '<i class="fa fa-chevron-up fa-2x"></i>',
+                                                                            'fa-angle-up'               => '<i class="fa fa-angle-up fa-2x"></i>',
+                                                                            'fa-caret-up'               => '<i class="fa fa-caret-up fa-2x"></i>',
+                                                                            'fa-angle-double-up'        => '<i class="fa fa-angle-double-up fa-2x"></i>'
+                                                                          ),
+                                                                     __( 'Button symbol', $text ),
+                                                                     __( 'Select the symbol of the button by choosing one of the ten variants above.', $text ),
+                                                                     'fa-hand-o-up'
+                                                                   );
                                     spacexchimp_p008_control_color( 'symbol-color',
                                                                     __( 'Button symbol color', $text ),
                                                                     __( 'Select the color of symbol inside button. You can also add html HEX color code.', $text ),
@@ -123,22 +94,16 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $text ),
                                                                      '300'
                                                                    );
+                                    spacexchimp_p008_control_choice( 'display-button',
+                                                                     array(
+                                                                            ''               => __( 'Full Website', $text ),
+                                                                            'Home Page Only' => __( 'Home Page Only', $text )
+                                                                          ),
+                                                                     __( 'Display button on', $text ),
+                                                                     __( 'Select where button need to be appeared.', $text ),
+                                                                     ''
+                                                                   );
                                 ?>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Display button on', $text ); ?></th>
-                                    <td>
-                                        <ul>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[display-button]" value="" <?php checked( '', $display_button ); ?> ><?php _e( 'Full Website', $text ); ?><li>
-                                            <li><input type="radio" name="spacexchimp_p008_settings[display-button]" value="Home Page Only" <?php checked( 'Home Page Only', $display_button ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'Select where button need to be appeared.', $text ); ?></td>
-                                </tr>
-
                             </table>
                         </div>
                     </div>
