@@ -62,7 +62,7 @@ function spacexchimp_p008_load_scripts_admin( $hook ) {
     $settings = SPACEXCHIMP_P008_SETTINGS;
 
     // Return if the page is not a settings page of this plugin
-    $settings_page = 'space-x-chimp_page_spacexchimp/' . $slug;
+    $settings_page = 'settings_page_' . $slug;
     if ( $settings_page != $hook ) return;
 
     // Read options from database
@@ -110,9 +110,7 @@ function spacexchimp_p008_load_scripts_frontend() {
     $display_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
 
     // Return if the button is disabled
-    if ( empty( $options['enable_button'] ) ) {
-        return;
-    }
+    if ( empty( $options['enable_button'] ) ) return;
 
     // If enabled on current page
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
