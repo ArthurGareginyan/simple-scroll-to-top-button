@@ -3,8 +3,8 @@ Contributors: Arthur Gareginyan
 Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.8
-Stable tag: 4.13
+Tested up to: 4.9
+Stable tag: 4.14
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -54,6 +54,16 @@ This plugin is ready for translation and has already been translated into severa
 * Spanish (translation by Ramiro Garcés and Patricio Toledo)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/simple-scroll-to-top-button).
+
+**System requirements**
+
+* [PHP](https://php.net) version **5.2** or higher.
+* [MySQL](https://www.mysql.com) version **5.0** or higher.
+
+**Recommendations:**
+
+* [PHP](https://php.net) version **7.0** or higher.
+* [MySQL](https://www.mysql.com) version **5.6** or higher.
 
 **Contribution**
 
@@ -160,6 +170,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.14 =
+* The plugin is fully tested for compatibility with WordPress version 4.9.
+* CSS code improved.
 
 = 4.13 =
 * German translation added. (Thanks to Michael)
