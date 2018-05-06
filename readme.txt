@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.17
+Stable tag: 4.18
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,6 +171,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+= 4.18 =
+* Added auto-versioning of the CSS and JavaScript files to avoid cache issues.
+* CSS code in the file 'admin.css' is optimized.
+
 = 4.17 =
 * Fixed the link "Settings", located in the plugin's meta row on the "Plugins" page. The suffix ".php" was deleted.
 * Fixed information stored in the header of the translation files.
@@ -298,7 +302,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Added default values to empty options.
 * Added the "_load_scripts_base" function with the basis of scripts and stylesheets.
 * Fixed the enable/disable option.
-* Added prefix to the name of the variable in 'wp_localize_script' WP function, to prevent conflicts.
+* Added prefix to the name of the variable in 'wp_localize_script' WordPress function, to prevent conflicts.
 * The "name" attribute removed from the "form" tag.
 * Code formatting improved.
 * F.A.Q. section updated.
