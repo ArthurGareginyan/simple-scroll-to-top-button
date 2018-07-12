@@ -1,6 +1,6 @@
 # Simple Scroll to Top Button
 
-**Free Premium WordPress Plugin**
+**Free WordPress Plugin**
 
 ![screenshot](https://github.com/ArthurGareginyan/simple-scroll-to-top-button/blob/master/assets/banner-772x250.png)
 
