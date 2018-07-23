@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.21
+Stable tag: 4.22
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,7 @@ This plugin is ready for translation and has already been translated into severa
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
 * German (translation by Michael)
 * Spanish (translation by Ramiro Garcés and Patricio Toledo)
+* Dutch (translation by Peter Leenders)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/simple-scroll-to-top-button).
 
@@ -170,6 +171,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.22 =
+* Dutch translation added. (Thanks to Peter Leenders)
+* The code block that adds dynamic JavaScript is moved to a separate function '_load_scripts_dynamic_js' within the 'enqueue.php' file.
+* The code block that adds dynamic CSS is moved to a separate function '_load_scripts_dynamic_css' within the 'enqueue.php' file.
+* The function '_load_scripts_base' is deleted due to uselessness.
+* The function '_load_scripts_admin' is improved.
+* The function '_load_scripts_frontend' is improved.
+* The banner of Space X-Chimp, located on the settings page of the plugin, is updated. The image 'banner.png' is deleted.
+* Some texts are updated.
+* All translation files are updated.
 
 = 4.21 =
 * The extra mention of the constant '_SLUG'  is removed from the file 'enqueue.php'.
