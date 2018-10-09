@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.22
+Stable tag: 4.23
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,7 @@ Easily add cross browser "Scroll to Top" button to your website. It will be resp
 
 An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add a "Scroll to Top" button to your website in a simple and elegant way. This button appears at the bottom-right of the website once the visitors scrolls down a page on your website. It appears only when visitors scroll down the webpage. As a result, your website visitors can easily scroll smoothly back to the very top of a page with one click of the button. This can be particularly handy for pages with a lot of text/content, or in cases wherever a browser's scrollbar is just not good enough (or not present at all, like on tablets) to enable one-click, one-screen scrolling. This gives your website better navigation and also adds a more professional look to your website.
 
-This plugin give you finer control over "Scroll to Top" button, it can be configured on the plugin settings page. You can select where the button will be showed, such as home page or all pages. You can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. If you want more options then tell us and we will be happy to add it.
+This plugin give you finer control over "Scroll to Top" button, it can be configured on the plugin settings page. You can select where the button will be showed, such as home page or all pages. You can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. If you want more options, then let us know and we will be happy to add them.
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the Scroll To Up button. "Scroll to Top" button will be responsive and compatible with all major browsers. It will work with any theme! No knowledge of any coding (HTML, CSS, JavaScript, PHP) is required at all.
 
@@ -94,7 +94,7 @@ Manually via FTP access:
 4. Log in to Admin Area of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
-After installation and activation, the "`Scroll to Top`" menu item will appear in the "`Settings`" section of Admin Area. Click on it in order to view the plugin settings page.
+After installation and activation, the "`Scroll to Top`" menu item will appear in the "`Settings`" section of Admin Area. Click on it in order to view the plugin settings page.
 
 [More help installing plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
@@ -168,9 +168,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 * [Developer website](https://www.spacexchimp.com)
 * [Dedicated plugin page on GitHub](https://github.com/ArthurGareginyan/simple-scroll-to-top-button)
+* [Dedicated plugin page on WordPress.org](https://wordpress.org/plugins/simple-scroll-to-top-button/)
 
 
 == Changelog ==
+
+= 4.23 =
+* Content of the "Settings" section updated.
+* Content of the "Usage Instructions" section updated.
+* CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
+* Code commenting improved.
+* Translation files are updated.
 
 = 4.22 =
 * Dutch translation added. (Thanks to Peter Leenders)
@@ -286,7 +294,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Some PHP 'if' statements replaced with shorthand.
 * Inline CSS code removed, and instead added CSS class. The 'ssttbutton_css_options' function removed.
 * Changed the sorting of enqueueing of scripts.
-* The ''Family' page tab renamed to 'Store'.
+* The 'Family' page tab renamed to 'Store'.
 * Added ad banner of my store website.
 
 = 4.4.1 =

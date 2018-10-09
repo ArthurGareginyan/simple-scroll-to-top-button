@@ -96,7 +96,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    );
                                     spacexchimp_p008_control_choice( 'display-button',
                                                                      array(
-                                                                            ''               => __( 'Full Website', $text ),
+                                                                            ''               => __( 'Every frontend page', $text ),
                                                                             'Home Page Only' => __( 'Home Page Only', $text )
                                                                           ),
                                                                      __( 'Display button on', $text ),
