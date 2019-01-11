@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.0
-Stable tag: 4.25
+Stable tag: 4.26
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -172,6 +172,13 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.26 =
+* Content of the "Usage" section updated.
+* Code formatting in the "admin.js" file improved.
+* Code commenting improved.
+* The copyright date updated.
+* Translation files are updated.
 
 = 4.25 =
 * Improvement: Design of the plugin settings page is improved.
