@@ -1,23 +1,25 @@
 === Simple Scroll to Top Button ===
 Contributors: Arthur Gareginyan
-Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller,
+Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
-Tested up to: 5.0
-Stable tag: 4.26
+Tested up to: 5.1
+Stable tag: 4.27
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
+Easily and safely add a "Scroll to Top" button to your WordPress website.
 
 
 == Description ==
 
-An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add a "Scroll to Top" button to your website in a simple and elegant way. This button appears at the bottom-right of the website once the visitors scrolls down a page on your website. It appears only when visitors scroll down the webpage. As a result, your website visitors can easily scroll smoothly back to the very top of a page with one click of the button. This can be particularly handy for pages with a lot of text/content, or in cases wherever a browser's scrollbar is just not good enough (or not present at all, like on tablets) to enable one-click, one-screen scrolling. This gives your website better navigation and also adds a more professional look to your website.
+An easy to use, with intuitive interface, WordPress plugin that gives you the ability to easily and safely add a "Scroll to Top" button to your WordPress website.
+
+The "Scroll to Top" button appears at the bottom-right of the website once the visitors scrolls down a page on your website. It appears only when visitors scroll down the webpage. As a result, your website visitors can easily scroll smoothly back to the very top of a page with one click of the button. This can be particularly handy for pages with a lot of text/content, or in cases wherever a browser's scrollbar is just not good enough (or not present at all, like on tablets) to enable one-click, one-screen scrolling. This gives your website better navigation and also adds a more professional look to your website.
 
 This plugin give you finer control over "Scroll to Top" button, it can be configured on the plugin settings page. You can select where the button will be showed, such as home page or all pages. You can customize the button style using and combining 10 symbols and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of button, color (unlimited) of background, color (unlimited) of symbol and etc. If you want more options, then let us know and we will be happy to add them.
 
-Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the Scroll To Up button. "Scroll to Top" button will be responsive and compatible with all major browsers. It will work with any theme! No knowledge of any coding (HTML, CSS, JavaScript, PHP) is required at all.
+Its purpose is to provide a familiar experience to WordPress users. You don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying your fancy "Scroll to Top" button. It's that simple! In addition, your "Scroll to Top" button will be compatible with all major browsers and work with any theme.
 
 **Features**
 
@@ -46,7 +48,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 
 **Translation**
 
-This plugin is ready for translation and has already been translated into several languages.
+This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. It is also possible that not all existing translations are up-to-date or correct, so you are welcome to make corrections. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
 
 * English (default)
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
@@ -54,7 +56,7 @@ This plugin is ready for translation and has already been translated into severa
 * Spanish (translation by Ramiro Garcés and Patricio Toledo)
 * Dutch (translation by Peter Leenders)
 
-If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/simple-scroll-to-top-button).
+If you want to help translate this plugin, please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/simple-scroll-to-top-button).
 
 **Minimum system requirements:**
 
@@ -101,11 +103,13 @@ After installation and activation, the "`Scroll to Top`" menu item will appear i
 
 == Frequently Asked Questions ==
 
-= Q. Will this plugin work on my WordPress.COM website? =
-A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
+= Q. Will this plugin work on my wordpress.COM website? =
+A. Sorry, this plugin is available for use only on self-hosted (wordpress.ORG) websites.
 
 = Q. Can I use this plugin on my language? =
-A. Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. The POT file is included and placed in the "`languages`" folder. Just [send the PO file to us](https://www.spacexchimp.com/contact.html) and we will include this translation within the next plugin update. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
+A. Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. It is also possible that not all existing translations are up-to-date or correct, so you are welcome to make corrections. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
+
+If you want to help translate this plugin, please use the POT file that is included and placed in the `languages` folder to create a translation PO file. Just [send the PO file to us](https://www.spacexchimp.com/contact.html) and we will include this translation within the next plugin update.
 
 = Q. How does it work? =
 A. Simply go to the plugin settings page, select the desired settings and click the "Save changes" button. Enjoy your fancy "Scroll to Top" button. It's that simple!
@@ -121,9 +125,9 @@ A. Absolutely not. This plugin is configurable entirely from the plugin settings
 A. Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page.
 
 = Q. It's not working. What could be wrong? =
-A. As with every plugin, it's possible that things don't work. The most common reason for this is a web browser's cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's cache may solve the problem.
+A. As with every plugin, it's possible that things don't work. It's impossible to tell what could be wrong exactly. The most common reason for this is a web browser’s cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser’s cache. Clearing your browser’s cache may solve the problem.
 
-It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, we'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
+If you post a support request in the plugin's support forum on WordPress.org, we'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
 
 = Q. The last WordPress update is preventing me from editing my website that is using this plugin. Why is this? =
 A. This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just be a cache, so please try to clear your website's cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also please try to re-login to the website, this too can help.
@@ -172,6 +176,15 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.27 =
+* The readme "Tested up to:" value changed to 5.1 after full testing process and ensuring compatibility.
+* Content of the "F.A.Q." section updated.
+* Some texts are corrected or replaced with new ones.
+* All translation files are updated.
+* Code formatting improved.
+* Added CSS class ".custom-list" for displaying a custom list, which is used on the plugin settings page.
+* The human.txt file updated.
 
 = 4.26 =
 * Content of the "Usage" section updated.

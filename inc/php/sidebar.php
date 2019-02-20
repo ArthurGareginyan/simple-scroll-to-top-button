@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'This plugin allows you to easily add the "Scroll to Top" button to your website in a simple and elegant way.', $text ); ?></p>
+                    <p><?php _e( 'This plugin gives you the ability to easily and safely add a "Scroll to Top" button to your WordPress website.', $text ); ?></p>
                 </div>
             </div>
 

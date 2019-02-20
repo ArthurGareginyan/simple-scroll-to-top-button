@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Simple Scroll to Top Button
  * Plugin URI: https://github.com/ArthurGareginyan/simple-scroll-to-top-button
- * Description: Easily add cross browser "Scroll to Top" button to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
+ * Description: Easily and safely add a "Scroll to Top" button to your WordPress website.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.26
+ * Version: 4.27
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
