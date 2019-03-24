@@ -10,11 +10,16 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function spacexchimp_p008_add_container() {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p008_plugin();
+
     // Retrieve options from database
-    $options = get_option( SPACEXCHIMP_P008_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
 
     // Return if the button is disabled
-    if ( empty( $options['enable_button'] ) ) return;
+    if ( empty( $options['enable_button'] ) ) {
+        return;
+    }
 
     // Declare variables
     $display_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
