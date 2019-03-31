@@ -16,11 +16,6 @@ function spacexchimp_p008_add_container() {
     // Retrieve options from database
     $options = get_option( $plugin['settings'] . '_settings' );
 
-    // Return if the button is disabled
-    if ( empty( $options['enable_button'] ) ) {
-        return;
-    }
-
     // Declare variables
     $display_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
     $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;

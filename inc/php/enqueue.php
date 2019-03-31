@@ -117,11 +117,6 @@ function spacexchimp_p008_load_scripts_frontend() {
     $options = get_option( $plugin['settings'] . '_settings' );
     $display_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
 
-    // Return if the button is disabled
-    if ( empty( $options['enable_button'] ) ) {
-        return;
-    }
-
     // If enabled on current page
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
 
