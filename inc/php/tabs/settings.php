@@ -34,28 +34,12 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     </button>
                     <!-- END SUBMIT -->
 
-                    <div class="postbox" id="main">
-                        <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
+                    <div class="postbox" id="options-group-button">
+                        <h3 class="title"><?php _e( 'Button', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
+                            <p class="note"><?php _e( 'Here you can customize the button.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
-                                    spacexchimp_p008_control_choice( 'background_button',
-                                                                     array(
-                                                                            'fa-square'                 => '<i class="fa fa-square fa-2x"></i>',
-                                                                            'fa-square-o'               => '<i class="fa fa-square-o fa-2x"></i>',
-                                                                            'fa-circle'                 => '<i class="fa fa-circle fa-2x"></i>',
-                                                                            ' '                         => __( 'Without background', $plugin['text'] )
-                                                                          ),
-                                                                     __( 'Button background', $plugin['text'] ),
-                                                                     __( 'Select the background of the button by choosing one of the four variants above.', $plugin['text'] ),
-                                                                     'fa-circle'
-                                                                   );
-                                    spacexchimp_p008_control_color( 'background-color',
-                                                                    __( 'Button background color', $plugin['text'] ),
-                                                                    __( 'Select the background color of button. You can also add html HEX color code.', $plugin['text'] ),
-                                                                    '#fff'
-                                                                  );
                                     spacexchimp_p008_control_choice( 'image_button',
                                                                      array(
                                                                             'fa-arrow-up'               => '<i class="fa fa-arrow-up fa-lg"></i>',
@@ -69,29 +53,73 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                             'fa-caret-up'               => '<i class="fa fa-caret-up fa-2x"></i>',
                                                                             'fa-angle-double-up'        => '<i class="fa fa-angle-double-up fa-2x"></i>'
                                                                           ),
-                                                                     __( 'Button symbol', $plugin['text'] ),
+                                                                     __( 'Symbol', $plugin['text'] ),
                                                                      __( 'Select the symbol of the button by choosing one of the ten variants above.', $plugin['text'] ),
                                                                      'fa-hand-o-up'
                                                                    );
+                                    spacexchimp_p008_control_choice( 'background_button',
+                                                                     array(
+                                                                            'fa-square'                 => '<i class="fa fa-square fa-2x"></i>',
+                                                                            'fa-square-o'               => '<i class="fa fa-square-o fa-2x"></i>',
+                                                                            'fa-circle'                 => '<i class="fa fa-circle fa-2x"></i>',
+                                                                            ' '                         => __( 'Without background', $plugin['text'] )
+                                                                          ),
+                                                                     __( 'Background shape', $plugin['text'] ),
+                                                                     __( 'Select the background of the button by choosing one of the four variants above.', $plugin['text'] ),
+                                                                     'fa-circle'
+                                                                   );
+                                    spacexchimp_p008_control_separator(
+                                                                        __( 'Color', $plugin['text'] )
+                                                                      );
                                     spacexchimp_p008_control_color( 'symbol-color',
-                                                                    __( 'Button symbol color', $plugin['text'] ),
+                                                                    __( 'Symbol color', $plugin['text'] ),
                                                                     __( 'Select the color of symbol inside button. You can also add html HEX color code.', $plugin['text'] ),
                                                                     '#fff'
                                                                   );
-                                    spacexchimp_p008_control_switch( 'transparency_button',
-                                                                     __( 'Transparency', $plugin['text'] ),
-                                                                     __( 'Enable the transparency of the button.', $plugin['text'] )
-                                                                   );
+                                    spacexchimp_p008_control_color( 'background-color',
+                                                                    __( 'Background color', $plugin['text'] ),
+                                                                    __( 'Select the background color of button. You can also add html HEX color code.', $plugin['text'] ),
+                                                                    '#fff'
+                                                                  );
+                                    spacexchimp_p008_control_separator(
+                                                                        __( 'Size', $plugin['text'] )
+                                                                      );
                                     spacexchimp_p008_control_number( 'size_button',
                                                                      __( 'Button size', $plugin['text'] ),
                                                                      __( 'You can set the size of button (in pixels). The default size is 32 pixels.', $plugin['text'] ),
                                                                      '32'
+                                                                   );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="postbox" id="options-group-effects">
+                        <h3 class="title"><?php _e( 'Effects', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can customize the effects.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
+                                    spacexchimp_p008_control_switch( 'transparency_button',
+                                                                     __( 'Transparency', $plugin['text'] ),
+                                                                     __( 'Enable the transparency of the button.', $plugin['text'] )
                                                                    );
                                     spacexchimp_p008_control_number( 'scroll_duration',
                                                                      __( 'Scroll duration', $plugin['text'] ),
                                                                      __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $plugin['text'] ),
                                                                      '300'
                                                                    );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="postbox" id="options-group-autoload">
+                        <h3 class="title"><?php _e( 'Autoload', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can configure the autoload.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
                                     spacexchimp_p008_control_choice( 'display-button',
                                                                      array(
                                                                             ''               => __( 'Every frontend page', $plugin['text'] ),
@@ -112,7 +140,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
                     <!-- PREVIEW -->
                     <div class="postbox" id="preview">
-                        <h3 class="title"><?php _e( 'Live Preview', $plugin['text'] ); ?></h3>
+                        <h3 class="title"><?php _e( 'Live preview', $plugin['text'] ); ?></h3>
                         <div class="inside">
                             <a id="ssttbutton" href="#top" class="<?php echo $transparency; ?>">
                                 <span class="fa-stack fa-lg">
