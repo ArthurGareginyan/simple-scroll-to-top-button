@@ -3,7 +3,7 @@ Contributors: Arthur Gareginyan
 Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, to top, back top, back to top, go to top, bottom to top, back to up, scroll top, scroll up, page scroll up, one click scroll to top,link to top, back button, back to top button, arrow, button, navigation, back widget, scroll back to top, scroll me up, scroll to top, scroll to up, scroll top, scroll up, scroll up, scroll widget, scroll, scroller, scrolling, scroll up, simple back to top, simple scroll to top, smooth scroll to top, to top button, top button, top scroll, top, up button, up, vertical scroller
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
-Tested up to: 5.1
+Tested up to: 5.2
 Stable tag: 4.33
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
