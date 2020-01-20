@@ -4,7 +4,7 @@ Tags: scroll to top, scroll up, scroll back, back to top, smooth scroll, back, t
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.3
-Stable tag: 4.35
+Stable tag: 4.36
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -177,6 +177,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.36 - Jan 20, 2020 =
+* Maintenance: The copyright date updated to support the 2020 year.
 
 = 4.35 - Nov 11, 2019 =
 * Maintenance: Compatibility with upcoming WordPress 5.3.
