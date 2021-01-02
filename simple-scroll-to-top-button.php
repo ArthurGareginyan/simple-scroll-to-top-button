@@ -5,7 +5,7 @@
  * Description: Easily and safely add a "Scroll to Top" button to your WordPress website.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.41
+ * Version: 4.42
  * License: GPL3
  * Text Domain: simple-scroll-to-top-button
  * Domain Path: /languages/
