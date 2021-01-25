@@ -55,7 +55,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                           ),
                                                                      __( 'Symbol', $plugin['text'] ),
                                                                      __( 'Select the symbol of the button by choosing one of the ten variants above.', $plugin['text'] ),
-                                                                     'fa-hand-o-up'
+                                                                     'fa-arrow-up'
                                                                    );
                                     spacexchimp_p008_control_choice( 'background_button',
                                                                      array(
@@ -79,7 +79,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     spacexchimp_p008_control_color( 'background-color',
                                                                     __( 'Background color', $plugin['text'] ),
                                                                     __( 'Select the background color of button. You can also add html HEX color code.', $plugin['text'] ),
-                                                                    '#fff'
+                                                                    '#ff4f7d'
                                                                   );
                                     spacexchimp_p008_control_separator(
                                                                         __( 'Size', $plugin['text'] )

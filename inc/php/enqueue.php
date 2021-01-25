@@ -36,7 +36,7 @@ function spacexchimp_p008_load_scripts_dynamic_css() {
 
     // Retrieve options from database and declare variables
     $options = get_option( $plugin['settings'] . '_settings' );
-    $backgroun_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#000';
+    $backgroun_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#ff4f7d';
     $symbol_color = !empty( $options['symbol-color'] ) ? $options['symbol-color'] : '#fff';
     $size_button = !empty( $options['size_button'] ) ? $options['size_button'] : '32';
 

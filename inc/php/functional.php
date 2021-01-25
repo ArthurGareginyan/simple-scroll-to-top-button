@@ -20,7 +20,7 @@ function spacexchimp_p008_add_container() {
     $display_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
     $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
     $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
-    $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
+    $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-arrow-up';
 
     // If enabled on current page
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
