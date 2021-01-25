@@ -617,9 +617,6 @@ td.help-text {
  -------------------------------------------------------------- */
 
 /* Preview section */
-#preview .inside {
-    text-align: center;
-}
-#ssttbutton {
+#preview #ssttbutton {
     position: static !important;
 }
