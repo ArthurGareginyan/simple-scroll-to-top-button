@@ -16,17 +16,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <form action="options.php" method="post" enctype="multipart/form-data">
                     <?php settings_fields( $plugin['settings'] . '_settings_group' ); ?>
 
-                    <?php
-                        // Retrieve options from database
-                        $options = get_option( $plugin['settings'] . '_settings' );
-
-                        // Set default value if option is empty
-                        $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
-                        $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
-                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#000';
-                        $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-hand-o-up';
-                    ?>
-
                     <!-- SUBMIT -->
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
