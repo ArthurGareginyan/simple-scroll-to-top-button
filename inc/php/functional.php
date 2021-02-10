@@ -6,7 +6,8 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Add DIV container with button to footer.
+ * Generate the button
+ * @return string
  */
 function spacexchimp_p008_generator() {
 
@@ -22,7 +23,7 @@ function spacexchimp_p008_generator() {
     $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
     $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-arrow-up';
 
-    // If enabled on current page
+    // Generate button
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
         ?>
             <a id="ssttbutton" href="#top" class="<?php echo $transparency; ?>">
