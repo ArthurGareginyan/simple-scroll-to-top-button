@@ -141,7 +141,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         <div class="inside">
                             <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $plugin['text'] ); ?></p><br>
                             <div class="text-center">
-                                <?php spacexchimp_p008_add_container(); ?>
+                                <?php spacexchimp_p008_generator(); ?>
                             </div>
                         </div>
                     </div>

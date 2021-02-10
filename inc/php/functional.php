@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Add DIV container with button to footer.
  */
-function spacexchimp_p008_add_container() {
+function spacexchimp_p008_generator() {
 
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
@@ -34,4 +34,4 @@ function spacexchimp_p008_add_container() {
         <?php
     }
 }
-add_action( 'wp_footer', 'spacexchimp_p008_add_container', 999 );
+add_action( 'wp_footer', 'spacexchimp_p008_generator', 999 );
