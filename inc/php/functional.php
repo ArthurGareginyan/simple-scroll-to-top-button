@@ -35,4 +35,8 @@ function spacexchimp_p008_generator() {
         <?php
     }
 }
+
+/**
+ * Inject the button into the website's frontend (footer section)
+ */
 add_action( 'wp_footer', 'spacexchimp_p008_generator', 999 );
