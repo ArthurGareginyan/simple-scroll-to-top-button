@@ -66,6 +66,18 @@ function spacexchimp_p008_load_on() {
 }
 
 /**
+ * Autoload option
+ */
+function spacexchimp_p008_autoload() {
+
+    // Check if the current page matches the selected one
+    $load_on = spacexchimp_p008_load_on();
+    if ( $load_on === true ) {
+        spacexchimp_p008_generator();
+    }
+}
+
+/**
  * Inject the button into the website's frontend (footer section)
  */
 add_action( 'wp_footer', 'spacexchimp_p008_generator', 999 );
