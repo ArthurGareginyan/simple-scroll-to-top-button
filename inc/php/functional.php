@@ -11,12 +11,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function spacexchimp_p008_generator() {
 
-    // Return if the current page does not match the selected one
-    $load_on = spacexchimp_p008_load_on();
-    if ( $load_on !== true ) {
-        return;
-    }
-
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
 
@@ -80,4 +74,4 @@ function spacexchimp_p008_autoload() {
 /**
  * Inject the button into the website's frontend (footer section)
  */
-add_action( 'wp_footer', 'spacexchimp_p008_generator', 999 );
+add_action( 'wp_footer', 'spacexchimp_p008_autoload', 999 );
