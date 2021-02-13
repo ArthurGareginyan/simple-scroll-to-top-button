@@ -24,7 +24,11 @@ function spacexchimp_p008_generator() {
 
     // Generate button
     ?>
-        <a id="ssttbutton" href="#top" class="<?php echo $transparency; ?>">
+        <a
+            id="ssttbutton"
+            href="#top"
+            class="<?php echo $transparency; ?>"
+        >
             <span class="fa-stack fa-lg">
                 <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>
                 <i class="ssttbutton-symbol fa <?php echo $image_button; ?> fa-stack-1x"></i>
