@@ -37,6 +37,32 @@ function spacexchimp_p008_generator() {
 }
 
 /**
+ * Callback for checking if the current page matches the selected one
+ * @return boolean ('true' or 'false')
+ */
+function spacexchimp_p008_load_on() {
+
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p008_plugin();
+
+    // Retrieve options from database
+    $options = get_option( $plugin['settings'] . '_settings' );
+    $load_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
+
+    // Return 'true' if the current page matches the selected one
+    if ( $load_on == '' ) {
+        return true;
+    } elseif ( $load_on == 'Home Page Only' ) {
+        if ( is_home() OR is_front_page() ) {
+            return true;
+        }
+    }
+
+    // Return 'false' if nothing matches
+    return false;
+}
+
+/**
  * Inject the button into the website's frontend (footer section)
  */
 add_action( 'wp_footer', 'spacexchimp_p008_generator', 999 );
