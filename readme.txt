@@ -5,7 +5,7 @@ Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 4.42
+Stable tag: 4.43
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -182,6 +182,12 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.43 - Feb 14, 2021 =
+* Enhancement: On the plugin settings page, the "Live preview" section has been redesigned and rewritten for better usability.
+* Enhancement: On the plugin settings page, some options have been redesigned for better usability.
+* Enhancement: The default value for the "Button: Symbol", "Button: Symbol color" and "Button: Background color" options have been changed to "fa-arrow-up", "#fff" and "#ff4f7d" respectively. This is done for better usability when the plugin is just installed.
+* Maintenance: The contents of the "functional.php" and "enqueue.php" files have been optimised; Code formatting and commenting improved. New functions ("_load_on" and "_autoload") added and some functions ("_add_container" -> "_generator") renamed.
 
 = 4.42 - Jan 1, 2021 =
 * Maintenance: The copyright date updated to support the 2021 year.
