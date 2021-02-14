@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2021-01-02 21:12+0300\n"
+"POT-Creation-Date: 2021-02-14 19:24+0300\n"
 "PO-Revision-Date: 2016-02-24 14:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -72,7 +72,7 @@ msgstr ""
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:165
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:152
 msgid "Support"
 msgstr ""
 
@@ -100,16 +100,16 @@ msgstr ""
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr ""
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:167
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:154
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr ""
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:172
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:159
 #: inc/php/tabs/support.php:25
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:174
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:161
 msgid "Thanks for your support!"
 msgstr ""
 
@@ -480,120 +480,124 @@ msgstr ""
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr ""
 
-#: inc/php/tabs/settings.php:33 inc/php/tabs/settings.php:146
+#: inc/php/tabs/settings.php:22 inc/php/tabs/settings.php:135
 msgid "Save changes"
 msgstr ""
 
-#: inc/php/tabs/settings.php:38
+#: inc/php/tabs/settings.php:27
 msgid "Button"
 msgstr ""
 
-#: inc/php/tabs/settings.php:40
+#: inc/php/tabs/settings.php:29
 msgid "Here you can customize the button."
 msgstr ""
 
-#: inc/php/tabs/settings.php:56
+#: inc/php/tabs/settings.php:45
 msgid "Symbol"
 msgstr ""
 
-#: inc/php/tabs/settings.php:57
+#: inc/php/tabs/settings.php:46
 msgid "Select the symbol of the button by choosing one of the ten variants above."
 msgstr ""
 
-#: inc/php/tabs/settings.php:65
+#: inc/php/tabs/settings.php:54
 msgid "Without background"
 msgstr ""
 
-#: inc/php/tabs/settings.php:67
+#: inc/php/tabs/settings.php:56
 msgid "Background shape"
 msgstr ""
 
-#: inc/php/tabs/settings.php:68
+#: inc/php/tabs/settings.php:57
 msgid "Select the background of the button by choosing one of the four variants above."
 msgstr ""
 
-#: inc/php/tabs/settings.php:72
+#: inc/php/tabs/settings.php:61
 msgid "Color"
 msgstr ""
 
-#: inc/php/tabs/settings.php:75
+#: inc/php/tabs/settings.php:64
 msgid "Symbol color"
 msgstr ""
 
-#: inc/php/tabs/settings.php:76
+#: inc/php/tabs/settings.php:65
 msgid "Select the color of symbol inside button. You can also add html HEX color code."
 msgstr ""
 
-#: inc/php/tabs/settings.php:80
+#: inc/php/tabs/settings.php:69
 msgid "Background color"
 msgstr ""
 
-#: inc/php/tabs/settings.php:81
+#: inc/php/tabs/settings.php:70
 msgid "Select the background color of button. You can also add html HEX color code."
 msgstr ""
 
-#: inc/php/tabs/settings.php:85
+#: inc/php/tabs/settings.php:74
 msgid "Size"
 msgstr ""
 
-#: inc/php/tabs/settings.php:88
+#: inc/php/tabs/settings.php:77
 msgid "Button size"
 msgstr ""
 
-#: inc/php/tabs/settings.php:89
+#: inc/php/tabs/settings.php:78
 msgid "You can set the size of button (in pixels). The default size is 32 pixels."
 msgstr ""
 
-#: inc/php/tabs/settings.php:98
+#: inc/php/tabs/settings.php:87
 msgid "Effects"
 msgstr ""
 
-#: inc/php/tabs/settings.php:100
+#: inc/php/tabs/settings.php:89
 msgid "Here you can customize the effects."
 msgstr ""
 
-#: inc/php/tabs/settings.php:104
+#: inc/php/tabs/settings.php:93
 msgid "Transparency"
 msgstr ""
 
-#: inc/php/tabs/settings.php:105
+#: inc/php/tabs/settings.php:94
 msgid "Enable the transparency of the button."
 msgstr ""
 
-#: inc/php/tabs/settings.php:108
+#: inc/php/tabs/settings.php:97
 msgid "Scroll duration"
 msgstr ""
 
-#: inc/php/tabs/settings.php:109
+#: inc/php/tabs/settings.php:98
 msgid "Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds."
 msgstr ""
 
-#: inc/php/tabs/settings.php:118
+#: inc/php/tabs/settings.php:107
 msgid "Autoload"
 msgstr ""
 
-#: inc/php/tabs/settings.php:120
+#: inc/php/tabs/settings.php:109
 msgid "Here you can configure the autoload."
 msgstr ""
 
-#: inc/php/tabs/settings.php:125
+#: inc/php/tabs/settings.php:114
 msgid "Every frontend page"
 msgstr ""
 
-#: inc/php/tabs/settings.php:126
+#: inc/php/tabs/settings.php:115
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/php/tabs/settings.php:128
+#: inc/php/tabs/settings.php:117
 msgid "Display button on"
 msgstr ""
 
-#: inc/php/tabs/settings.php:129
+#: inc/php/tabs/settings.php:118
 msgid "Select where button need to be appeared."
 msgstr ""
 
-#: inc/php/tabs/settings.php:151
+#: inc/php/tabs/settings.php:140
 msgid "Live preview"
+msgstr ""
+
+#: inc/php/tabs/settings.php:142
+msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 
 #: inc/php/tabs/support.php:17

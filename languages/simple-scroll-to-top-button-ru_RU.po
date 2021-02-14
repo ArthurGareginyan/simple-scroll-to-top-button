@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simple Scroll to Top Button\n"
-"POT-Creation-Date: 2021-01-02 21:12+0300\n"
-"PO-Revision-Date: 2021-01-02 21:12+0300\n"
+"POT-Creation-Date: 2021-02-14 19:25+0300\n"
+"PO-Revision-Date: 2021-02-14 19:25+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -74,7 +74,7 @@ msgstr "Применение"
 msgid "F.A.Q."
 msgstr "F.A.Q."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:165
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:152
 msgid "Support"
 msgstr "Поддержка"
 
@@ -102,16 +102,16 @@ msgstr "Помощь"
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Если у вас есть вопрос, пожалуйста ознакомьтесь с информацией в разделе FAQ."
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:167
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:154
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Каждый небольшой вклад помогает покрыть наши расходы и позволяет нам тратить больше времени на создание вещей, которыми могут наслаждаться удивительные люди, такие как вы."
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:172
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:159
 #: inc/php/tabs/support.php:25
 msgid "Donate with PayPal"
 msgstr "Пожертвовать через PayPal"
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:174
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:161
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
@@ -482,121 +482,127 @@ msgstr "Вы можете задать ваш вопрос на %s этой ст
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr "Но имейте в виду, что этот плагин является бесплатным и без специальной поддержки, поэтому у нас нет возможности ответить на все вопросы."
 
-#: inc/php/tabs/settings.php:33 inc/php/tabs/settings.php:146
+#: inc/php/tabs/settings.php:22 inc/php/tabs/settings.php:135
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/tabs/settings.php:38
+#: inc/php/tabs/settings.php:27
 msgid "Button"
 msgstr "Кнопка"
 
-#: inc/php/tabs/settings.php:40
+#: inc/php/tabs/settings.php:29
 msgid "Here you can customize the button."
 msgstr "Здесь вы можете настроить кнопку."
 
-#: inc/php/tabs/settings.php:56
+#: inc/php/tabs/settings.php:45
 msgid "Symbol"
 msgstr "Символ"
 
-#: inc/php/tabs/settings.php:57
+#: inc/php/tabs/settings.php:46
 msgid "Select the symbol of the button by choosing one of the ten variants above."
 msgstr "Выберите символ кнопки, выбрав один из десяти вариантов выше."
 
-#: inc/php/tabs/settings.php:65
+#: inc/php/tabs/settings.php:54
 msgid "Without background"
 msgstr "Без фона"
 
-#: inc/php/tabs/settings.php:67
+#: inc/php/tabs/settings.php:56
 msgid "Background shape"
 msgstr "Форма фона"
 
-#: inc/php/tabs/settings.php:68
+#: inc/php/tabs/settings.php:57
 msgid "Select the background of the button by choosing one of the four variants above."
 msgstr "Выберите фон кнопки, выбрав один из четырех вариантов выше."
 
-#: inc/php/tabs/settings.php:72
+#: inc/php/tabs/settings.php:61
 msgid "Color"
 msgstr "Цвет"
 
-#: inc/php/tabs/settings.php:75
+#: inc/php/tabs/settings.php:64
 msgid "Symbol color"
 msgstr "Цвет символа"
 
-#: inc/php/tabs/settings.php:76
+#: inc/php/tabs/settings.php:65
 msgid "Select the color of symbol inside button. You can also add html HEX color code."
 msgstr "Выберите цвет символа кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/tabs/settings.php:80
+#: inc/php/tabs/settings.php:69
 msgid "Background color"
 msgstr "Цвет фона"
 
-#: inc/php/tabs/settings.php:81
+#: inc/php/tabs/settings.php:70
 msgid "Select the background color of button. You can also add html HEX color code."
 msgstr "Выберите цвет фона кнопки. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/tabs/settings.php:85
+#: inc/php/tabs/settings.php:74
 msgid "Size"
 msgstr "Размер"
 
-#: inc/php/tabs/settings.php:88
+#: inc/php/tabs/settings.php:77
 msgid "Button size"
 msgstr "Размер кнопки"
 
-#: inc/php/tabs/settings.php:89
+#: inc/php/tabs/settings.php:78
 msgid "You can set the size of button (in pixels). The default size is 32 pixels."
 msgstr "Вы можете установить размер кнопки (в пикселях). Размер по умолчанию - 32 пикселя."
 
-#: inc/php/tabs/settings.php:98
+#: inc/php/tabs/settings.php:87
 msgid "Effects"
 msgstr "Эффекты"
 
-#: inc/php/tabs/settings.php:100
+#: inc/php/tabs/settings.php:89
 msgid "Here you can customize the effects."
 msgstr ""
 
-#: inc/php/tabs/settings.php:104
+#: inc/php/tabs/settings.php:93
 msgid "Transparency"
 msgstr "Прозрачность"
 
-#: inc/php/tabs/settings.php:105
+#: inc/php/tabs/settings.php:94
 msgid "Enable the transparency of the button."
 msgstr "Включить прозрачность кнопки."
 
-#: inc/php/tabs/settings.php:108
+#: inc/php/tabs/settings.php:97
 msgid "Scroll duration"
 msgstr "Длительность прокрутки"
 
-#: inc/php/tabs/settings.php:109
+#: inc/php/tabs/settings.php:98
 msgid "Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds."
 msgstr "Продолжительность задается в миллисекундах. Более высокие значения указывают на более медленную анимацию (скорость/гладкость), а не более быструю. Продолжительность по умолчанию - 300 миллисекунд."
 
-#: inc/php/tabs/settings.php:118
+#: inc/php/tabs/settings.php:107
 msgid "Autoload"
 msgstr ""
 
-#: inc/php/tabs/settings.php:120
+#: inc/php/tabs/settings.php:109
 msgid "Here you can configure the autoload."
 msgstr ""
 
-#: inc/php/tabs/settings.php:125
+#: inc/php/tabs/settings.php:114
 msgid "Every frontend page"
 msgstr "Каждая передняя страница"
 
-#: inc/php/tabs/settings.php:126
+#: inc/php/tabs/settings.php:115
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/php/tabs/settings.php:128
+#: inc/php/tabs/settings.php:117
 msgid "Display button on"
 msgstr "Отображать кнопку на"
 
-#: inc/php/tabs/settings.php:129
+#: inc/php/tabs/settings.php:118
 msgid "Select where button need to be appeared."
 msgstr "Выберите, где кнопка должна показываться."
 
-#: inc/php/tabs/settings.php:151
+#: inc/php/tabs/settings.php:140
 msgid "Live preview"
 msgstr "Просмотр в реальном времени"
+
+#: inc/php/tabs/settings.php:142
+#, fuzzy
+#| msgid "Click the \"Save changes\" button."
+msgid "Click the \"Save changes\" button to update this preview."
+msgstr "Нажмите кнопку «Сохранить изменения»."
 
 #: inc/php/tabs/support.php:17
 msgid "Support Us"
