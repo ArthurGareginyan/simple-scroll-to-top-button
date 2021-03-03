@@ -14,8 +14,8 @@ function spacexchimp_p008_generator() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
 
-    // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p008_options();
 
     // Declare variables
     $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
@@ -46,8 +46,9 @@ function spacexchimp_p008_load_on() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
 
-    // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p008_options();
+
     $load_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
 
     // Return 'true' if the current page matches the selected one
