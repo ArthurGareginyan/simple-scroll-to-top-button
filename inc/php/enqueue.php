@@ -13,8 +13,9 @@ function spacexchimp_p008_load_scripts_dynamic_js() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p008_options();
+
     $scroll_duration = !empty( $options['scroll_duration'] ) ? $options['scroll_duration'] : '300';
 
     // Create an array (JS object) with all the settings
@@ -34,8 +35,9 @@ function spacexchimp_p008_load_scripts_dynamic_css() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p008_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p008_options();
+
     $backgroun_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#ff4f7d';
     $symbol_color = !empty( $options['symbol-color'] ) ? $options['symbol-color'] : '#fff';
     $size_button = !empty( $options['size_button'] ) ? $options['size_button'] : '32';
