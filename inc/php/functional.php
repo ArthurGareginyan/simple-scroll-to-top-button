@@ -49,6 +49,7 @@ function spacexchimp_p008_load_on() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p008_options();
 
+    // Declare variables
     $load_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
 
     // Return 'true' if the current page matches the selected one
