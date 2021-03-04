@@ -19,8 +19,8 @@ function spacexchimp_p008_generator() {
 
     // Declare variables
     $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
-    $background_button = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
-    $image_button = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-arrow-up';
+    $background_button = $options['background_button'];
+    $image_button = $options['image_button'];
 
     // Generate button
     ?>
@@ -50,7 +50,7 @@ function spacexchimp_p008_load_on() {
     $options = spacexchimp_p008_options();
 
     // Declare variables
-    $load_on = !empty( $options['display-button'] ) ? $options['display-button'] : '';
+    $load_on = $options['display-button'];
 
     // Return 'true' if the current page matches the selected one
     if ( $load_on == '' ) {
