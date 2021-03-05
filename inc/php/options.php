@@ -30,6 +30,9 @@ function spacexchimp_p008_options() {
     $array['background_button'] = !empty( $options['background_button'] ) ? $options['background_button'] : 'fa-circle';
     $array['image_button'] = !empty( $options['image_button'] ) ? $options['image_button'] : 'fa-arrow-up';
 
+    // Sanitize data
+
+
     // Return the processed data
     return $array;
 }
