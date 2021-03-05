@@ -105,7 +105,6 @@ function spacexchimp_p008_load_scripts_admin( $hook ) {
 
     // Call the function that contains the dynamic CSS
     spacexchimp_p008_load_scripts_dynamic_css();
-
 }
 add_action( 'admin_enqueue_scripts', $plugin['prefix'] . '_load_scripts_admin' );
 
