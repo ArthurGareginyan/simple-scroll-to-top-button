@@ -18,16 +18,23 @@ function spacexchimp_p008_generator() {
     $options = spacexchimp_p008_options();
 
     // Declare variables
-    $transparency = (!empty( $options['transparency_button'] ) AND $options['transparency_button'] == 'on') ? 'ssttbutton-transparent' : '' ;
+    $transparency = $options['transparency_button'];
     $background_button = $options['background_button'];
     $image_button = $options['image_button'];
+
+    // Generate transparency
+    if ( $transparency === true ) {
+        $transparency_html = 'ssttbutton-transparent';
+    } else {
+        $transparency_html = ''; // Empty value
+    }
 
     // Generate button
     ?>
         <a
             id="ssttbutton"
             href="#top"
-            class="<?php echo $transparency; ?>"
+            class="<?php echo $transparency_html; ?>"
         >
             <span class="fa-stack fa-lg">
                 <i class="ssttbutton-background fa <?php echo $background_button; ?> fa-stack-2x"></i>

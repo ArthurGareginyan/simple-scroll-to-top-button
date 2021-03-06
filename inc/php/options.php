@@ -24,6 +24,7 @@ function spacexchimp_p008_options() {
     $list = array(
         'hidden_scrollto' => '0',
         'display-button' => '',
+        'transparency_button' => '',
         'scroll_duration' => '300',
         'background-color' => '#ff4f7d',
         'symbol-color' => '#fff',
@@ -39,7 +40,7 @@ function spacexchimp_p008_options() {
 
 
     // Modify data
-
+    $array['transparency_button'] = ( $array['transparency_button'] == 'on' ) ? true : false ;
 
     // Return the processed data
     return $array;
