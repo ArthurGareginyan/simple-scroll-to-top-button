@@ -22,15 +22,15 @@ function spacexchimp_p008_options() {
 
     // Set default value if option is empty
     $list = array(
-        'hidden_scrollto' => '0',
-        'display-button' => '',
-        'transparency_button' => '',
-        'scroll_duration' => '300',
-        'background-color' => '#ff4f7d',
-        'symbol-color' => '#fff',
-        'size_button' => '32',
         'background_button' => 'fa-circle',
+        'background-color' => '#ff4f7d',
+        'display-button' => '',
+        'hidden_scrollto' => '0',
         'image_button' => 'fa-arrow-up',
+        'scroll_duration' => '300',
+        'size_button' => '32',
+        'symbol-color' => '#fff',
+        'transparency_button' => '',
     );
     foreach ( $list as $name => $default ) {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
