@@ -5,7 +5,7 @@ Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 4.44
+Stable tag: 4.45
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -183,7 +183,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
-=
+= 4.45 - Jul 19, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.8.
 
 = 4.44 - Mar 8, 2021 =
