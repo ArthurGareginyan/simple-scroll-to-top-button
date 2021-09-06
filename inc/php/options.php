@@ -40,7 +40,7 @@ function spacexchimp_p008_options() {
 
 
     // Modify data
-    $array['transparency_button'] = ( $array['transparency_button'] == 'on' ) ? true : false ;
+    $array['transparency_button'] = ( $array['transparency_button'] == 'on' || $array['transparency_button'] == '1' || $array['transparency_button'] == 'true' ) ? true : false;
 
     // Return the processed data
     return $array;
