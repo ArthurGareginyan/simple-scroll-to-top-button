@@ -42,7 +42,15 @@ function spacexchimp_p008_options() {
     }
 
     // Sanitize data
-
+    //$array['background_button'] = esc_textarea( $array['background_button'] );
+    //$array['background-color'] = esc_textarea( $array['background-color'] );
+    //$array['display-button'] = esc_textarea( $array['display-button'] );
+    //$array['hidden_scrollto'] = esc_textarea( $array['hidden_scrollto'] );
+    //$array['image_button'] = esc_textarea( $array['image_button'] );
+    //$array['scroll_duration'] = esc_textarea( $array['scroll_duration'] );
+    //$array['size_button'] = esc_textarea( $array['size_button'] );
+    //$array['symbol-color'] = esc_textarea( $array['symbol-color'] );
+    //$array['transparency_button'] = esc_textarea( $array['transparency_button'] );
 
     // Modify data
     $array['transparency_button'] = ( $array['transparency_button'] == 'on' || $array['transparency_button'] == '1' || $array['transparency_button'] == 'true' ) ? true : false;
