@@ -62,21 +62,18 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                       );
                                     spacexchimp_p008_control_color( 'symbol-color',
                                                                     __( 'Symbol color', $plugin['text'] ),
-                                                                    __( 'Select the color of symbol inside button. You can also add html HEX color code.', $plugin['text'] ),
-                                                                    '#fff'
+                                                                    __( 'Select the color of symbol inside button. You can also add html HEX color code.', $plugin['text'] )
                                                                   );
                                     spacexchimp_p008_control_color( 'background-color',
                                                                     __( 'Background color', $plugin['text'] ),
-                                                                    __( 'Select the background color of button. You can also add html HEX color code.', $plugin['text'] ),
-                                                                    '#ff4f7d'
+                                                                    __( 'Select the background color of button. You can also add html HEX color code.', $plugin['text'] )
                                                                   );
                                     spacexchimp_p008_control_separator(
                                                                         __( 'Size', $plugin['text'] )
                                                                       );
                                     spacexchimp_p008_control_number( 'size_button',
                                                                      __( 'Button size', $plugin['text'] ),
-                                                                     __( 'You can set the size of button (in pixels). The default size is 32 pixels.', $plugin['text'] ),
-                                                                     '32'
+                                                                     __( 'You can set the size of button (in pixels). The default size is 32 pixels.', $plugin['text'] )
                                                                    );
                                 ?>
                             </table>
@@ -95,8 +92,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    );
                                     spacexchimp_p008_control_number( 'scroll_duration',
                                                                      __( 'Scroll duration', $plugin['text'] ),
-                                                                     __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $plugin['text'] ),
-                                                                     '300'
+                                                                     __( 'Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The default duration is 300 milliseconds.', $plugin['text'] )
                                                                    );
                                 ?>
                             </table>
