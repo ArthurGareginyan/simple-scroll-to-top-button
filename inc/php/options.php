@@ -24,8 +24,6 @@ function spacexchimp_p008_options() {
 
     // Create an array with options
     $array = $options;
-
-    // Set default value if option is empty
     $list = array(
         'background_button' => (string) 'fa-circle', // _control_choice
         'background-color' => (string) '#ff4f7d', // _control_color
@@ -38,6 +36,8 @@ function spacexchimp_p008_options() {
         'transparency_button' => (boolean) '', // _control_switch
     );
     foreach ( $list as $name => $default ) {
+
+        // Set default value if option is empty
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
     }
 
