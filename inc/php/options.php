@@ -51,11 +51,11 @@ function spacexchimp_p008_options() {
     }
 
     // Sanitize data
-    //$array['background_button'] = esc_textarea( $array['background_button'] );
-    //$array['background-color'] = esc_textarea( $array['background-color'] );
-    //$array['display-button'] = esc_textarea( $array['display-button'] );
-    //$array['image_button'] = esc_textarea( $array['image_button'] );
-    //$array['symbol-color'] = esc_textarea( $array['symbol-color'] );
+    $array['background_button'] = sanitize_text_field( $array['background_button'] );
+    $array['background-color'] = sanitize_hex_color( $array['background-color'] );
+    $array['display-button'] = sanitize_text_field( $array['display-button'] );
+    $array['image_button'] = sanitize_text_field( $array['image_button'] );
+    $array['symbol-color'] = sanitize_hex_color( $array['symbol-color'] );
 
     // Modify data
 
